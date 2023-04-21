@@ -1,0 +1,396 @@
+:root
+{
+    --SiteColorOne: rgb(66, 66, 66);
+    --SiteColorTwo: rgb(255, 235, 75);
+    --SiteColorThree: rgb(153, 141, 42);
+    --PrimaryFont: AgencyFB, Arial, Helvetica, sans-serif;
+    --PrimaryFontBold: AgencyFBBold, Arial, Helvetica, sans-serif;
+    --SecondaryFont: Arial, Helvetica, sans-serif;
+}
+
+@font-face
+{
+    font-family: AgencyFB;
+    src: url(../Fonts/AgencyFB.ttf);
+}
+
+@font-face
+{
+    font-family: AgencyFBBold;
+    src: url(../Fonts/AGENCYB.TTF);
+}
+
+a
+{
+    cursor: pointer;
+}
+
+h1
+{
+    color: black;
+    font-family: var(--PrimaryFont);
+    font-size: 75px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 24px;
+    word-spacing: normal;
+}
+
+h2
+{
+    color: black;
+    font-family: var(--SecondaryFont);
+    font-size: 28px;
+    font-weight: 120;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 24px;
+    word-spacing: normal;
+}
+
+h3
+{
+    color: black;
+    font-family: var(--SecondaryFont);
+    font-size: 22px;
+    font-weight: 120;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 24px;
+    word-spacing: normal;
+}
+
+p
+{
+    color: black;
+    font-family: var(--SecondaryFont);
+    font-size: 18px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 24px;
+    word-spacing: normal;
+}
+
+.RegularSection
+{
+    margin: 0px 0px 0px 0px;
+    padding: 60px 0px 60px 0px;
+
+}
+
+.RegularContainer
+{
+    margin: 0px auto 0px auto;
+    padding: 0px 250px 0px 250px;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .RegularSection
+    {
+        margin: 0px 0px 0px 0px;
+        padding: 60px 0px 60px 0px;
+
+    }
+
+    .RegularContainer
+    {
+        margin: 0px auto 0px auto;
+        padding: 0px 80px 0px 80px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .RegularSection
+    {
+        margin: 0px 0px 0px 0px;
+        padding: 60px 0px 60px 0px;
+
+    }
+
+    .RegularContainer
+    {
+        margin: 0px auto 0px auto;
+        padding: 0px 40px 0px 40px;
+    }
+}
+
+body:after
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../Img/Social/SocialIconGithubHover.png) url(../Img/Social/SocialIconLinkedInHover.png) url(../Img/Social/SocialIconTwitterHover.png) url(../Img/Social/SocialIconYoutubeHover.png);
+}
+
+.MastheadImage
+{
+    width: 100%;
+    height: 8cm;
+    background-image: url(../img/VELI\ Porfolio\ Banner\ 2021\ Website\ Small.jpg);
+    background-size: 1400pt, cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.NavBarHeader
+{
+    position: sticky;
+    top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 74px;
+    background-color: var(--SiteColorTwo);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.247);
+}
+
+.NavBarLogo
+{
+    padding-left: 30px;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    column-gap: 5px;
+}
+
+.NavBarLogo img
+{
+    height: 50px;
+    align-self: center;
+}
+
+.NavBarName
+{
+    padding: 0px 0px 0px 0;
+    color: var(--SiteColorOne);
+    font-family: var(--PrimaryFont);
+    font-size: 46px;
+    font-weight: 580;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    word-spacing: normal;
+    align-self: center;
+    line-height: normal;
+}
+
+.NavBar
+{
+    width: 120px;
+    height: 100%;
+    width: fit-content;
+}
+
+.NavBar ul
+{
+    margin: auto;
+}
+
+.NavBar ul li
+{
+    display: inline;
+    float: left;
+}
+
+.NavBar ul li a
+{
+    padding: 0 20px;
+    display: block;
+    height: 100%;
+    font-family: var(--PrimaryFont);
+    font-size: 30px;
+    line-height: 74px;
+    color: var(--SiteColorOne);
+    font-weight: 450;
+}
+
+.NavBar ul li a:hover
+{
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.NavBarSocial
+{
+    padding-right: 30px;
+    padding-left: 120px;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.NavBarSocialLinkedIn
+{
+    width: 24px;
+    height: 24px;
+    background-image: url(../Img/Social/SocialIconLinkedIn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.NavBarSocialLinkedIn:hover
+{
+    background-image: url(../Img/Social/SocialIconLinkedInHover.png);
+}
+
+.NavBarSocialYoutube
+{
+    width: 24px;
+    height: 24px;
+    background-image: url(../Img/Social/SocialIconYoutube.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.NavBarSocialYoutube:hover
+{
+    background-image: url(../Img/Social/SocialIconYoutubeHover.png);
+}
+
+.NavBarSocialGit
+{
+    width: 24px;
+    height: 24px;
+    background-image: url(../Img/Social/SocialIconGithub.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.NavBarSocialGit:hover
+{
+    background-image: url(../Img/Social/SocialIconGithubHover.png);
+}
+
+.NavBarSocialTwitter
+{
+    width: 24px;
+    height: 24px;
+    background-image: url(../Img/Social/SocialIconTwitter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.NavBarSocialTwitter:hover
+{
+    background-image: url(../Img/Social/SocialIconTwitterHover.png);
+}
+
+.FooterContainer
+{
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+    background-color: var(--SiteColorOne);
+}
+
+.FooterContainerFlex
+{
+    display: flex;
+    flex-basis: 100%;
+}
+
+.FooterContainerFlex a
+{
+    padding: 0px;
+    line-height: 28px;
+    color: white;
+    font-family: var(--PrimaryFont);
+    font-size: 18px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: left;
+    word-spacing: normal;
+    letter-spacing: 0.38pt;
+    text-transform: uppercase;
+    transition: all ease-in-out 180ms;
+}
+
+.FooterContainerFlex a:hover
+{
+    color: var(--SiteColorTwo);
+}
+
+.FooterContainerFlex ul:nth-child(1)
+{
+    border-left: 4px solid white;
+    padding-left: 20px;
+}
+
+.FooterContainerFlex ul:nth-child(1),
+.FooterContainerFlex ul:nth-child(2)
+{
+    flex-basis: 180px;
+}
+
+.FooterContainerFlex ul:nth-child(3)
+{
+    flex-grow: 2;
+    align-self: center;
+}
+
+.FooterContainerFlex ul:nth-child(3) p
+{
+    padding: 0px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 14px;
+}
+
+.FooterContainerFlex ul:nth-child(4)
+{
+    flex-grow: 1;
+    flex-basis: 180px;
+    border-right: 4px solid white;
+    padding-right: 20px;
+}
+
+.FooterContainerFlex ul:nth-child(4) h2
+{
+    padding: 0px;
+    color: white;
+    line-height: 28px;
+    font-family: var(--PrimaryFont);
+    font-size: 18px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: right;
+    word-spacing: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.38pt;
+}
+
+.FooterContainerFlex ul:nth-child(4) h3
+{
+    padding: 0px;
+    color: white;
+    line-height: 28px;
+    font-family: var(--PrimaryFont);
+    font-size: 18px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: right;
+    word-spacing: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.38pt;
+}

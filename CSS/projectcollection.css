@@ -1,0 +1,154 @@
+.ProjectsHolder
+{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
+    grid-auto-rows: minmax(130px, 384px);
+    grid-gap: 10px 50px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.ProjectButton
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+}
+
+.ProjectButton .ProjectButtonImage
+{
+    width: 100%;
+    height: 66%;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.ProjectButton:hover img
+{
+    transform: scale(1.08);
+}
+
+
+.ProjectButton .ProjectTitlesHolder
+{
+    padding-top: 16px;
+    height: 42%;
+    overflow: hidden;
+    z-index: 2;
+    background-color: white;
+}
+
+.ProjectButtonTitlePrimary
+{
+    padding: 0px 0px 6px 0px;
+    color: var(--SiteColorOne);
+    font-family: var(--PrimaryFont);
+    line-height: 34px;
+    font-size: 32px;
+    font-weight: 450;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    word-spacing: normal;
+}
+
+.ProjectButtonTitleSecondary
+{
+    padding: 0px 0px 3px 0px;
+    color: var(--SiteColorOne);
+    font-family: var(--SecondaryFont);
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    word-spacing: normal;
+}
+
+.ProjectSortByHolder
+{
+    padding: 0px 0px 60px 0px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*
+.ProjectCategoriesHolder
+{
+    width: 60%;
+    height: fit-content;
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+*/
+
+.ProjectCategories
+{
+    width: 46vw;
+    padding: 6px 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.ProjectCategoryButton
+{
+    width: 100%;
+    height: 24pt;
+    background-color: var(--SiteColorOne);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectCategoryButtonCurrent
+{
+    width: 100%;
+    height: 24pt;
+    background-color: var(--SiteColorTwo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectSortByHolder h2
+{
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    font-family: var(--PrimaryFont);
+}
+
+.ProjectCategoryButton h3
+{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    transition: all ease-in-out 180ms;
+}
+
+.ProjectCategoryButton:hover h3
+{
+    color: var(--SiteColorTwo);
+}
+
+.ProjectCategoryButtonCurrent h3
+{
+    font-size: 14px;
+    text-align: center;
+    color: var(--SiteColorOne);
+    font-weight: 560;
+}

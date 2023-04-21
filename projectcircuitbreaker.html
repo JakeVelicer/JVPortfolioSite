@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake Velicer's Portfolio - Circuit Breaker</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/Img/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Img/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Img/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Img/Favicon/site.webmanifest">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/projectpage.css">
+</head>
+
+<body>
+    <div class="MastheadImage"></div>
+
+    <header class="NavBarHeader">
+        <div class="NavBarLogo">
+            <img src="Img/VELI-Logo2021-Black-Clear-500x500.png" alt="VELI Logo">
+            <h2 class="NavBarName">JAKE VELICER</h2>
+        </div>
+        <nav class="NavBar">
+            <ul>
+                <li><a href="index.html">Featured</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="NavBarSocial">
+            <a href="https://www.linkedin.com/in/jake-velicer-2ba756b9/" target="_blank" rel="noopener noreferrer">
+                <div class="NavBarSocialLinkedIn"></div>
+            </a>
+            <a href="https://www.youtube.com/@VELI-Productions" target="_blank" rel="noopener noreferrer">
+                <div class="NavBarSocialYoutube"></div>
+            </a>
+            <a href="https://github.com/JakeVelicer" target="_blank" rel="noopener noreferrer">
+                <div class="NavBarSocialGit"></div>
+            </a>
+            <a href="https://twitter.com/JakesFable" target="_blank" rel="noopener noreferrer">
+                <div class="NavBarSocialTwitter"></div>
+            </a>
+        </div>
+    </header>
+
+    <section class="RegularSection">
+        <div class="RegularContainer">
+            <h1>Circuit Breaker</h1>
+            <h2 class="ProjecDetailsHeader">October 2021 | Programmer, Narrative Designer | Still Pending Games - Indie | Published Unity Game on Steam</h2>
+            <p class="ProjectParagraphPrimary">Circuit Breaker is a turn-based strategy game that allows the player to call upon the aid of a variety of audiences and their unique abilities to turn the tides of battle in your favor. Take control of the Rookie as you step into each Circuit and fight against many different types of opposing robots. Mastering both positioning yourself correctly on the field and knowing when to invoke the power of each audience will be key to achieving victory in the Circuit Breaker Pro League.</p>
+            <p class="ProjectParagraphPrimary">Development on Circuit Breaker started in the Fall of 2019 part of a Capstone Production Class. The project was continued after graduation. I was asked to join the project in August of 2020 and happily accepted. I was a programmer and narrative designer on the project. I was then tasked with reworking and developing multiple systems.</p>
+            <h2>Launch Trailer</h2>
+            <iframe class="ProjectPageYTEmbed" src="https://www.youtube.com/embed/HZctaD7iE-0" allowfullscreen></iframe>
+            <h2>Gameplay Demonstration</h2>
+            <iframe class="ProjectPageYTEmbed" src="https://www.youtube.com/embed/u--EPp8QjDo" allowfullscreen></iframe>
+            <h2>My Responsibilities</h2>
+            <h3>Various Upgrades</h3>
+            <p class="ProjectParagraphSecondary">The Mods or Upgrades of the game were completely redesigned to match the changes the designers had made to the base actions in the game. I was tasked with implementing all the new mods in Action Mods 1, Action Mods 2, and Movement Mods 2. I was also in charge of fixing bugs/making additions to some of the mods in Movement Mods 1 that had resulted from changes elsewhere in the codebase. Scott Duman was a huge help here as these were my first tasks on the project and I was still learning the codebase.</p>
+            <iframe class="ProjectPageYTEmbedTall" src="https://www.youtube.com/embed/44evCT8VSHs" allowfullscreen></iframe>
+            <p class="ProjectParagraphSecondary">One of the other more important concepts we utilized here for having the mods modify the base actions was to use Unity's scriptable objects. This allowed us to have the benefits of a struct, json, and/or prefab in one system. When used in conjunction with inheritance, we were able to have a very genericized system for connecting these different types of mods to the base actions in the game.</p>
+            <h3>The Hub</h3>
+            <p class="ProjectParagraphSecondary">The Hub was my largest contribution to the project. It was the main reason I was brought onto the project, and after I had completed most of the work on the mods,  it became my main focus. Everyone on the team had some ideas for what the hub might be like, so I made a gray box layout that combined everyone's goals for the hub and pitched what I had in mind for it. The feedback was really positive! I then went nose to the grindstone with implementing it's multiple features such as the dialogue segments, the fight-board keeping track of which circuit the player was to load into, the background changing based upon the player's progress, and more to make it fully functional. Thanks to our awesome artists, the screen ended up looking pretty cool!</p>
+            <div class="ImageGridRow">
+                <div class="ImageGridColumnTwo">
+                    <img src="Img/ProjectPages/CircuitBreaker/HubProgress1.png" alt="Showing progress of the Hub from Circuit Breaker Part 1">
+                    <img src="Img/ProjectPages/CircuitBreaker/HubProgress3.png" alt="Showing progress of the Hub from Circuit Breaker Part 3">
+                    <img src="Img/ProjectPages/CircuitBreaker/HubProgress6-1.png" alt="Showing final Main Screen of the Hub from Circuit Breaker">
+                </div>
+                <div class="ImageGridColumnTwo">
+                    <img src="Img/ProjectPages/CircuitBreaker/HubProgress2.png" alt="Showing progress of the Hub from Circuit Breaker Part 2">
+                    <img src="Img/ProjectPages/CircuitBreaker/HubProgress4.png" alt="Showing progress of the Hub from Circuit Breaker Part 4">
+                    <img src="Img/ProjectPages/CircuitBreaker/HubProgress6-2.png" alt="Showing final Mod Screen of the Hub from Circuit Breaker">
+                </div>
+            </div>
+            <img class="ProjectGifImage" src="Img/ProjectPages/CircuitBreaker/HubWalkthrough.gif" alt="Walkthrough Gif of the Hub from Circuit Breaker">
+            <h3>Dialogue Encounters</h3>
+            <p class="ProjectParagraphSecondary">The Hub was also pretty code heavy as while some of the screens had existed functionally before, there were many changes and new features. The Dialogue system was one of those new features. I had a blast working on story implementation as storytelling is one of the core reasons I got into game development. We again utilized scriptable objects for storing the information needed for each dialogue segment such as the text for each line or the path for the audio. We also utilized FMOD, an alternative audio engine, that allowed us to have a more optimized way of storing and handling over 120 dialogue files. Learning how to use their API with Unity was very interesting and useful!</p>
+            <iframe class="ProjectPageYTEmbed" src="https://www.youtube.com/embed/oljN66FDH4g" allowfullscreen></iframe>
+            <p class="ProjectParagraphSecondary">The dialogue was written by Warren Guiles, Ryan Voss, and Myself. The actual story of the game and the Circuit Breaker world changed a lot over the course of the project. There were many different iterations of the story written by other team members at different times. Ultimately it had to be fully re-written due to the story before being out of scope and incohesive. This was my first time really writing for a game and I had a lot of fun! We did our best to include diegetic mentions to gameplay mechanics and enemies while also having the world be explained and have drama ensue. It came down to the wire with rewriting the story, and it would have been great to polish it more, but I was overall happy with what we came up with in the time we had.</p>
+            <h3>UI Overhaul</h3>
+            <p class="ProjectParagraphSecondary">The UI in the game when I joined had a finished look in some menus and a placeholder look in others. Overall the UI was incohesive as the art style of the project changed over time. As a result, a UI team was formed to redo all of the art for the UI. I was in charge of implementing most of the newer UI art and any new functionality that needed to be added to the menus being updated. This included all of the menus in the Hub, the Action panel, the Audience Panel, the Turn Order Panel, the ToolTip UI, the Tutorial Panels, the Main Menu, and the Options Menu.</p>
+            <img class="ProjectGifImageWide" src="Img/ProjectPages/CircuitBreaker/ActionPanelRunthrough.gif" alt="Showing the different button states on the Action Panel UI from Circuit Breaker">
+            <div class="ImageGridRow">
+                <div class="ImageGridColumnTwo">
+                    <img src="Img/ProjectPages/CircuitBreaker/GamePaused.png" alt="Showing Pause Menu UI from Circuit Breaker">
+                </div>
+                <div class="ImageGridColumnTwo">
+                    <img src="Img/ProjectPages/CircuitBreaker/OptionsMenu.png" alt="Showing Options Menu UI from Circuit Breaker">
+                </div>
+            </div>
+            <img class="ProjectGifImageWide" src="Img/ProjectPages/CircuitBreaker/TurnOrderRunthrough.gif" alt="Showing the different button states on the Turn Order Panel UI from Circuit Breaker">
+            <p class="ProjectParagraphPrimary">Jumping into the largest codebase I had ever jumped into was intimidating, but a fun challenge and educational experience for me. I became much more familiar with different ways of tracking down which code was connected to what using IntelliSense while also communicating a lot with the programmers who had worked on the project since the beginning. As a result, I was able to get up to date on all the systems I was interacting with and become an integral part of the team.</p>
+            <iframe class="ProjectPageSteamEmbed" src="https://store.steampowered.com/widget/1745960/"></iframe>
+            <p class="ProjectParagraphPrimaryCentered">If you are a recruiter please email me at jake.contact@jakevelicer.com to send you a build to play directly. Thank you.</p>     
+        </div>
+    </section>
+
+    <footer class="FooterContainer">
+        <div class="RegularContainer FooterContainerFlex">
+            <ul>
+                <li><a href="index.html">Featured</a></li>
+                <li><a href="projects.html">All Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <ul>
+                <li><a href="projectsgamedev.html">Game Dev Projects</a></li>
+                <li><a href="projectsappdev.html">App Dev Projects</a></li>
+                <li><a href="projects3Dmodeling.html">3D Modeling Projects</a></li>
+            </ul>
+            <ul>
+                <li><p class="FooterContainerTagTwo">©2023 Jake Velicer Some Rights Reserved</p></li>
+            </ul>
+            <ul>
+                <li><h2>CONTACT INFO:</h2></li>
+                <li><h3>jake.contact@jakevelicer.com</h3></li>
+                <li><h3>(314) 971-2007</h3></li>
+                <li><h3>jakevelicer.com</h3></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

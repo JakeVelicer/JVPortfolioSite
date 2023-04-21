@@ -1,0 +1,140 @@
+h1
+{
+    padding: 40px 0px;
+}
+
+.FeaturedHolder
+{
+    padding: 40px 0px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.FeaturedElement
+{
+    height: 310px;
+    width: 74%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.FeaturedElementTextHolder
+{
+    padding: 24px 22px;
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+}
+
+.FeaturedElementTextHolder h2
+{
+    color: white;
+    font-family: var(--PrimaryFont);
+    font-size: 38px;
+    text-align: left;
+}
+
+.FeaturedElementTextHolder h3
+{
+    color: rgba(255, 255, 255, 0.801);
+    font-size: 18px;
+    text-align: left;
+}
+
+.FeaturedElementTextHolder p
+{
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 24px;
+    text-align: left;
+}
+
+.FeaturedElementImage
+{
+    width: 34%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.247);
+}
+
+.ViewProjectButton
+{
+    width: 120px;
+    height: 40px;
+    background-color: var(--SiteColorOne);
+    border-radius: 26px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.ViewProjectButton p
+{
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+.ViewProjectButton:hover
+{
+    background-color: black;
+}
+
+.ReelYTEmbed
+{
+    margin: 40px auto;
+    display: block;
+    width: 840px;
+    height: 473px;
+    border-style: none;
+    background-color: var(--SiteColorOne);
+}
+
+.AboutMeSection
+{
+    margin: 0;
+    padding: 90px 0px 70px 0px;
+    width: 100%;
+    background-color: black;
+}
+
+.AboutMeSection h2
+{
+    padding: 0px 0 40px 0;
+    color: white;
+    font-family: var(--PrimaryFont);
+    font-size: 75px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 24px;
+}
+
+.AboutMeQuoteTitle
+{
+    margin: 40px auto 0px auto;
+    width: 54%;
+    color: white;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.AboutMeText
+{
+    margin: 30px auto 0px auto;
+    width: 74%;
+    color: white;
+    font-style: italic;
+    font-size: 16px;
+}

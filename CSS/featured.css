@@ -40,23 +40,23 @@ h1
 {
     color: white;
     font-family: var(--PrimaryFont);
-    font-size: 38px;
+    font-size: 3.8rem;
+    line-height: 0.7;
     text-align: left;
 }
 
 .FeaturedElementTextHolder h3
 {
     color: rgba(255, 255, 255, 0.801);
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: left;
 }
 
 .FeaturedElementTextHolder p
 {
     color: white;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 100;
-    line-height: 24px;
     text-align: left;
 }
 
@@ -114,10 +114,10 @@ h1
     padding: 0px 0 40px 0;
     color: white;
     font-family: var(--PrimaryFont);
-    font-size: 75px;
+    font-size: 7.5rem;
     font-weight: 400;
     text-align: center;
-    line-height: 24px;
+    line-height: 0;
 }
 
 .AboutMeQuoteTitle
@@ -126,7 +126,7 @@ h1
     width: 54%;
     color: white;
     font-style: normal;
-    font-size: 20px;
+    font-size: 2.0rem;
     text-align: center;
 }
 
@@ -136,5 +136,5 @@ h1
     width: 74%;
     color: white;
     font-style: italic;
-    font-size: 16px;
+    font-size: 1.6rem;
 }

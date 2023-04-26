@@ -48,8 +48,8 @@
     padding: 0px 0px 6px 0px;
     color: var(--SiteColorOne);
     font-family: var(--PrimaryFont);
-    line-height: 34px;
-    font-size: 32px;
+    line-height: 1.4;
+    font-size: 3.2rem;
     font-weight: 450;
     font-style: normal;
     text-align: center;
@@ -63,7 +63,7 @@
     padding: 0px 0px 3px 0px;
     color: var(--SiteColorOne);
     font-family: var(--SecondaryFont);
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 100;
     font-style: normal;
     text-align: center;
@@ -127,14 +127,14 @@
 .ProjectSortByHolder h2
 {
     height: 100%;
-    font-size: 24px;
+    font-size: 2.4rem;
     text-align: center;
     font-family: var(--PrimaryFont);
 }
 
 .ProjectCategoryButton h3
 {
-    font-size: 14px;
+    font-size: 1.4rem;
     text-align: center;
     color: white;
     transition: all ease-in-out 180ms;
@@ -147,7 +147,7 @@
 
 .ProjectCategoryButtonCurrent h3
 {
-    font-size: 14px;
+    font-size: 1.4rem;
     text-align: center;
     color: var(--SiteColorOne);
     font-weight: 560;

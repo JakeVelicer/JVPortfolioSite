@@ -2,7 +2,7 @@
 {
     padding: 70px 0px 0px 0px;
     text-align: center;
-    line-height: 34px;
+    line-height: 1.5;
 }
 
 .BlogsList
@@ -22,7 +22,7 @@
 {
     display: block;
     width: 36vw;
-    height: 120px;
+    height: fit-content;
     background-color: var(--SiteColorOne);
     border-style: solid;
     border-width: 4px;
@@ -48,9 +48,9 @@
 {
     color: white;
     font-family: var(--PrimaryFont);
-    font-size: 26px;
+    font-size: 2.6rem;
     text-align: left;
-    line-height: 24px;
+    line-height: 1.1;
     transition: all ease-in-out 120ms;
 }
 
@@ -67,9 +67,9 @@
 .BlogElementTextHolder h3
 {
     color: rgba(255, 255, 255, 0.623);
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: left;
-    line-height: 12px;
+    line-height: 0.8;
 }
 
 .BlogsList img

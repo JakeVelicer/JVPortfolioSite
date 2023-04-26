@@ -6,8 +6,6 @@
     --PrimaryFont: AgencyFB, Arial, Helvetica, sans-serif;
     --PrimaryFontBold: AgencyFBBold, Arial, Helvetica, sans-serif;
     --SecondaryFont: Arial, Helvetica, sans-serif;
-
-    font-size: 62.5;
 }
 
 @font-face
@@ -22,6 +20,11 @@
     src: url(../Fonts/AGENCYB.TTF);
 }
 
+html
+{
+    font-size: 62.5%;
+}
+
 a
 {
     cursor: pointer;
@@ -31,13 +34,13 @@ h1
 {
     color: black;
     font-family: var(--PrimaryFont);
-    font-size: 75px;
+    font-size: 7.5rem;
     font-weight: 400;
     font-style: normal;
     text-align: center;
     text-decoration: none;
     text-transform: none;
-    line-height: 24px;
+    line-height: 0.8;
     word-spacing: normal;
 }
 
@@ -45,13 +48,13 @@ h2
 {
     color: black;
     font-family: var(--SecondaryFont);
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 120;
     font-style: normal;
     text-align: center;
     text-decoration: none;
     text-transform: none;
-    line-height: 24px;
+    line-height: 1.6;
     word-spacing: normal;
 }
 
@@ -59,13 +62,13 @@ h3
 {
     color: black;
     font-family: var(--SecondaryFont);
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 120;
     font-style: normal;
     text-align: center;
     text-decoration: none;
     text-transform: none;
-    line-height: 24px;
+    line-height: 1.4;
     word-spacing: normal;
 }
 
@@ -73,13 +76,13 @@ p
 {
     color: black;
     font-family: var(--SecondaryFont);
-    font-size: 18px;
+    font-size: 2.0rem;
     font-weight: 100;
     font-style: normal;
     text-align: left;
     text-decoration: none;
     text-transform: none;
-    line-height: 24px;
+    line-height: 1.6;
     word-spacing: normal;
 }
 
@@ -182,7 +185,7 @@ body:after
     padding: 0px 0px 0px 0;
     color: var(--SiteColorOne);
     font-family: var(--PrimaryFont);
-    font-size: 46px;
+    font-size: 4.6rem;
     font-weight: 580;
     font-style: normal;
     text-align: left;
@@ -190,7 +193,6 @@ body:after
     text-transform: none;
     word-spacing: normal;
     align-self: center;
-    line-height: normal;
 }
 
 .NavBar
@@ -315,10 +317,10 @@ body:after
 .FooterContainerFlex a
 {
     padding: 0px;
-    line-height: 28px;
+    line-height: 1.5;
     color: white;
     font-family: var(--PrimaryFont);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 100;
     font-style: normal;
     text-align: left;
@@ -356,7 +358,7 @@ body:after
     padding: 0px;
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .FooterContainerFlex ul:nth-child(4)
@@ -371,9 +373,9 @@ body:after
 {
     padding: 0px;
     color: white;
-    line-height: 28px;
+    line-height: 1.4;
     font-family: var(--PrimaryFont);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 100;
     font-style: normal;
     text-align: right;
@@ -386,9 +388,9 @@ body:after
 {
     padding: 0px;
     color: white;
-    line-height: 28px;
+    line-height: 1.5;
     font-family: var(--PrimaryFont);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 100;
     font-style: normal;
     text-align: right;

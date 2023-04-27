@@ -2,7 +2,7 @@
 {
     --SiteColorOne: rgb(66, 66, 66);
     --SiteColorTwo: rgb(255, 235, 75);
-    --SiteColorThree: rgb(153, 141, 42);
+    --SiteColorThree: rgb(136, 126, 36);
     --PrimaryFont: AgencyFB, Arial, Helvetica, sans-serif;
     --PrimaryFontBold: AgencyFBBold, Arial, Helvetica, sans-serif;
     --SecondaryFont: Arial, Helvetica, sans-serif;
@@ -252,7 +252,20 @@ body:after
     float: left;
 }
 
-.NavBar ul li a
+.NavBarPassivePage
+{
+    padding: 0 20px;
+    display: block;
+    height: 100%;
+    font-family: var(--PrimaryFont);
+    font-size: 30px;
+    line-height: 74px;
+    color: var(--SiteColorThree);
+    font-weight: 450;
+    transition: all ease-in-out 100ms;
+}
+
+.NavBarCurrentPage
 {
     padding: 0 20px;
     display: block;
@@ -262,13 +275,14 @@ body:after
     line-height: 74px;
     color: var(--SiteColorOne);
     font-weight: 450;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    transition: all ease-in-out 100ms;
 }
 
 .NavBar ul li a:hover
 {
     color: black;
-    text-decoration: underline;
-    text-underline-offset: 8px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -291,6 +305,7 @@ body:after
     background-image: url(../Img/Social/SocialIconLinkedIn.png);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all ease-in-out 100ms;
 }
 
 .NavBarSocialLinkedIn:hover
@@ -305,6 +320,7 @@ body:after
     background-image: url(../Img/Social/SocialIconYoutube.png);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all ease-in-out 100ms;
 }
 
 .NavBarSocialYoutube:hover
@@ -319,6 +335,7 @@ body:after
     background-image: url(../Img/Social/SocialIconGithub.png);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all ease-in-out 100ms;
 }
 
 .NavBarSocialGit:hover
@@ -333,6 +350,7 @@ body:after
     background-image: url(../Img/Social/SocialIconTwitter.png);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all ease-in-out 100ms;
 }
 
 .NavBarSocialTwitter:hover

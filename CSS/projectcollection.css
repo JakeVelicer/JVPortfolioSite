@@ -137,7 +137,7 @@
     font-size: 1.4rem;
     text-align: center;
     color: white;
-    transition: all ease-in-out 180ms;
+    transition: all ease-in-out 100ms;
 }
 
 .ProjectCategoryButton:hover h3

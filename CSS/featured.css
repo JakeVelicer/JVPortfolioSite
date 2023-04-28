@@ -152,7 +152,74 @@ h1
 
 @media only screen and (max-width: 768px)
 {
+    .FeaturedElement
+    {
+        height: fit-content;
+        width: 86%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
 
+    .FeaturedElementTextHolder
+    {
+        padding: 24px 22px;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        order: 2;
+    }
+
+    .FeaturedElementTextHolder h2
+    {
+        color: white;
+        font-family: var(--PrimaryFont);
+        font-size: 3.8rem;
+        line-height: 0.7;
+        text-align: center
+    }
+
+    .FeaturedElementTextHolder h3
+    {
+        color: rgba(255, 255, 255, 0.801);
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .FeaturedElementParagraph
+    {
+        display: none;
+    }
+
+    .FeaturedElementImage
+    {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        overflow: hidden;
+        box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.247);
+        order: 1;
+    }
+
+    .ViewProjectButton
+    {
+        width: 120px;
+        height: 40px;
+        background-color: var(--SiteColorOne);
+        position: relative;
+        bottom: unset;
+    }
+
+    .AboutMeText
+    {
+        width: 86%;
+    }
 }
 
 @media only screen and (max-width: 600px)

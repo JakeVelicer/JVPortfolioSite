@@ -122,6 +122,9 @@ body:after
     background-size: 1400pt, cover;
     background-repeat: repeat;
     background-position: center;
+    z-index: 800;
+    position: static;
+    top: 0px;
 }
 
 .NavBarHeader
@@ -390,6 +393,11 @@ body:after
     letter-spacing: 0.38pt;
 }
 
+.MobileNavMenu, .MobileNavBarSocial, .BurgerMenuButton
+{
+    display: none;
+}
+
 /* ----------------------------------- DIFFERENT SCREEN SIZES ----------------------------------- */
 
 @media only screen and (max-width: 1200px)
@@ -473,7 +481,7 @@ body:after
     .MastheadImage
     {
         background-size: 700pt, cover;
-        height: 6cm;
+        height: 240px;
     }
 
     .NavBarHeader
@@ -499,6 +507,81 @@ body:after
     .NavBarSocial
     {
         display: none;
+    }
+
+    .MobileNavMenu
+    {
+        display: none;
+        position: fixed;
+        top: 74px;
+        width: 100%;
+        height: 100vh;
+        z-index: 900;
+        background-color: var(--SiteColorTwo);
+    }
+
+    .MobileNav ul
+    { 
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .MobileNav ul li
+    {
+        flex-basis: 100%;
+        border-top: 2px solid #0000006b;
+    }
+
+    .MobileNav ul li:last-child
+    {
+        border-bottom: 2px solid #0000006b;
+    }
+
+    .NavBarPassivePage
+    {
+        padding: 10px 0px;
+        text-align: center;
+        flex-basis: 100%;
+        font-size: 3.8vh;
+        height: 10vh;
+        line-height: 8vh;
+    }
+
+    .NavBarCurrentPage
+    {
+        padding: 10px 0px;
+        text-align: center;
+        flex-basis: 100%;
+        font-size: 3.8vh;
+        height: 10vh;
+        line-height: 8vh;
+    }
+
+    .MobileNavBarSocial
+    {
+        margin: 0;
+        padding: 40px 0px;
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+        justify-content: center;
+    }
+
+    .BurgerMenuButton
+    {
+        display: block;
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        background-image: url(../Img/MobileMenu/BurgerMenu.png), url(../Img/MobileMenu/CloseIcon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center, center left 50px;
+        align-self: center;
+        overflow: hidden;
     }
 
     .FooterContainer

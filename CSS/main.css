@@ -467,7 +467,7 @@ body:after
     {
         margin: 0px auto 0px auto;
         padding: 0px 20px 0px 20px;
-        background-color: blue;
+        background-color: transparent;
     } 
 
     .MastheadImage
@@ -499,5 +499,90 @@ body:after
     .NavBarSocial
     {
         display: none;
+    }
+
+    .FooterContainer
+    {
+        width: 100%;
+        padding: 30px 0px 30px 0px;
+        background-color: var(--SiteColorOne);
+    }
+
+    .FooterContainerFlex
+    {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+
+    .FooterContainerFlex ul:nth-child(1)
+    {
+        border-left: none;
+        padding: 0px 0px 20px 0px;
+        flex-basis: 100%;
+        text-align: center;
+        order: 1;
+    }
+
+    
+    .FooterContainerFlex ul:nth-child(2)
+    {
+        flex-basis: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        order: 2;
+    }
+
+    .FooterContainerFlex ul:nth-child(3)
+    {
+        flex-basis: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        order: 4;
+    }
+
+    .FooterContainerFlex ul:nth-child(3) p
+    {
+        color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .FooterContainerFlex ul:nth-child(4)
+    {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 20px 0px;
+        border-right: none;
+        border-top: 4px solid white;
+        order: 3;
+    }
+
+    .FooterContainerFlex ul:nth-child(4) h2
+    {
+        color: white;
+        line-height: 1.4;
+        font-family: var(--PrimaryFont);
+        font-size: 1.8rem;
+        font-weight: 100;
+        font-style: normal;
+        text-align: center;
+        word-spacing: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.38pt;
+    }
+
+    .FooterContainerFlex ul:nth-child(4) h3
+    {
+        color: white;
+        line-height: 1.5;
+        font-family: var(--PrimaryFont);
+        font-size: 1.8rem;
+        font-weight: 100;
+        font-style: normal;
+        text-align: center;
+        word-spacing: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.38pt;
     }
 }

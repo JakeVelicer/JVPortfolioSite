@@ -6,6 +6,8 @@
     --PrimaryFont: AgencyFB, Arial, Helvetica, sans-serif;
     --PrimaryFontBold: AgencyFBBold, Arial, Helvetica, sans-serif;
     --SecondaryFont: Arial, Helvetica, sans-serif;
+    --YTAspect: 840 / 473;
+    --YTAspectTall: 840 / 657;
 }
 
 @font-face
@@ -100,74 +102,6 @@ p
     max-width: 1800pt;
 }
 
-@media only screen and (max-width: 1200px)
-{
-    .RegularSection
-    {
-        margin: 0px 0px 0px 0px;
-        padding: 60px 0px 60px 0px;
-    
-    }
-    
-    .RegularContainer
-    {
-        margin: 0px auto 0px auto;
-        padding: 0px 250px 0px 250px;
-        background-color: red;
-    }
-}
-
-@media only screen and (max-width: 992px)
-{
-    .RegularSection
-    {
-        margin: 0px 0px 0px 0px;
-        padding: 60px 0px 60px 0px;
-    
-    }
-    
-    .RegularContainer
-    {
-        margin: 0px auto 0px auto;
-        padding: 0px 250px 0px 250px;
-        background-color: green;
-    }
-}
-
-@media only screen and (max-width: 768px)
-{
-    .RegularSection
-    {
-        margin: 0px 0px 0px 0px;
-        padding: 60px 0px 60px 0px;
-    
-    }
-    
-    .RegularContainer
-    {
-        margin: 0px auto 0px auto;
-        padding: 0px 250px 0px 250px;
-        background-color: brown;
-    }
-}
-
-@media only screen and (max-width: 600px)
-{
-    .RegularSection
-    {
-        margin: 0px 0px 0px 0px;
-        padding: 60px 0px 60px 0px;
-    
-    }
-    
-    .RegularContainer
-    {
-        margin: 0px auto 0px auto;
-        padding: 0px 250px 0px 250px;
-        background-color: blue;
-    } 
-}
-
 body:after
 {
     position: absolute;
@@ -221,7 +155,7 @@ body:after
 
 .NavBarName
 {
-    padding: 0px 0px 0px 0;
+    padding: 0px;
     color: var(--SiteColorOne);
     font-family: var(--PrimaryFont);
     font-size: 4.6rem;
@@ -454,4 +388,116 @@ body:after
     word-spacing: normal;
     text-transform: uppercase;
     letter-spacing: 0.38pt;
+}
+
+/* ----------------------------------- DIFFERENT SCREEN SIZES ----------------------------------- */
+
+@media only screen and (max-width: 1200px)
+{
+    .RegularSection
+    {
+        margin: 0px 0px 0px 0px;
+        padding: 60px 0px 60px 0px;
+    
+    }
+    
+    .RegularContainer
+    {
+        margin: 0px auto 0px auto;
+        padding: 0px 80px 0px 80px;
+        background-color: red;
+    }
+}
+
+@media only screen and (max-width: 992px)
+{
+    .RegularSection
+    {
+        margin: 0px 0px 0px 0px;
+        padding: 60px 0px 60px 0px;
+    
+    }
+    
+    .RegularContainer
+    {
+        margin: 0px auto 0px auto;
+        padding: 0px 60px 0px 60px;
+        background-color: green;
+    }
+
+    .MastheadImage
+    {
+        background-size: 1200pt, cover;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .RegularSection
+    {
+        margin: 0px 0px 0px 0px;
+        padding: 60px 0px 60px 0px;
+    
+    }
+    
+    .RegularContainer
+    {
+        margin: 0px auto 0px auto;
+        padding: 0px 36px 0px 36px;
+        background-color: brown;
+    }
+
+    .MastheadImage
+    {
+        background-size: 1000pt, cover;
+        height: 7cm;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .RegularSection
+    {
+        margin: 0px 0px 0px 0px;
+        padding: 60px 0px 60px 0px;
+    
+    }
+    
+    .RegularContainer
+    {
+        margin: 0px auto 0px auto;
+        padding: 0px 20px 0px 20px;
+        background-color: blue;
+    } 
+
+    .MastheadImage
+    {
+        background-size: 700pt, cover;
+        height: 6cm;
+    }
+
+    .NavBarHeader
+    {
+        height: 74px;
+    }
+
+    .NavBarLogo
+    {
+        padding-left: 20px;
+    }
+
+    .NavBarName
+    {
+        font-size: 4rem;
+    }
+
+    .NavBar
+    {
+        display: none;
+    }
+
+    .NavBarSocial
+    {
+        display: none;
+    }
 }

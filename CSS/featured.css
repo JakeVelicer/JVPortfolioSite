@@ -93,10 +93,10 @@ h1
 
 .ReelYTEmbed
 {
+    aspect-ratio: var(--YTAspect);
+    width:min(100%, min(840px, 90vh*(var(--YTAspect))));
     margin: 40px auto;
     display: block;
-    width: 840px;
-    height: 473px;
     border-style: none;
     background-color: var(--SiteColorOne);
 }
@@ -137,4 +137,85 @@ h1
     color: white;
     font-style: italic;
     font-size: 1.6rem;
+}
+
+/* ----------------------------------- DIFFERENT SCREEN SIZES ----------------------------------- */
+
+@media only screen and (max-width: 1200px)
+{
+
+}
+
+@media only screen and (max-width: 992px)
+{
+
+}
+
+@media only screen and (max-width: 768px)
+{
+
+}
+
+@media only screen and (max-width: 600px)
+{
+    .FeaturedElement
+    {
+        height: fit-content;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .FeaturedElementTextHolder
+    {
+        padding: 24px 22px;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        position: relative;
+        align-items: center;
+    }
+
+    .FeaturedElementTextHolder h2
+    {
+        color: white;
+        font-family: var(--PrimaryFont);
+        font-size: 3.8rem;
+        line-height: 0.7;
+        text-align: center
+    }
+
+    .FeaturedElementTextHolder h3
+    {
+        color: rgba(255, 255, 255, 0.801);
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .FeaturedElementParagraph
+    {
+        display: none;
+    }
+
+    .FeaturedElementImage
+    {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        overflow: hidden;
+        box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.247);
+    }
+
+    .ViewProjectButton
+    {
+        width: 120px;
+        height: 40px;
+        background-color: var(--SiteColorOne);
+        position: relative;
+        bottom: unset;
+    }
 }

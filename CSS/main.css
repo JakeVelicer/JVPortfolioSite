@@ -42,7 +42,7 @@ h1
     text-align: center;
     text-decoration: none;
     text-transform: none;
-    line-height: 0.8;
+    line-height: 1;
     word-spacing: normal;
 }
 
@@ -735,8 +735,14 @@ body:after
         padding: 40px 0px;
         display: flex;
         flex-direction: row;
-        gap: 14px;
+        gap: 18px;
         justify-content: center;
+    }
+
+    .NavBarSocialLinkedIn, .NavBarSocialYoutube, .NavBarSocialGit, .NavBarSocialTwitter
+    {
+        width: 32px;
+        height: 32px;
     }
 
     .BurgerMenuButton

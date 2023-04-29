@@ -85,11 +85,11 @@
 
 .ProjectCategories
 {
-    width: 46vw;
+    width: 50vw;
     padding: 6px 0;
     display: flex;
     justify-content: center;
-    column-gap: 20px;
+    gap: 20px;
 }
 
 .ProjectCategoryButton
@@ -160,5 +160,31 @@
 
 @media only screen and (max-width: 600px)
 {
-
+    .ProjectSortByHolder
+    {
+        padding: 0px 0px 40px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .ProjectCategories
+    {
+        width: 70vw;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .ProjectCategoryButton
+    {
+        width: 46%;
+        height: 24pt;
+    }
+    
+    .ProjectCategoryButtonCurrent
+    {
+        width: 46%;
+        height: 24pt;
+    }
+    
 }

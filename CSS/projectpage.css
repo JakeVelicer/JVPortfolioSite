@@ -380,4 +380,9 @@ h3
     {
         width: 100%;
     }
+
+    .ImageGridRow
+    {
+        padding: 24px 0px;
+    }
 }

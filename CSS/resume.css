@@ -8,6 +8,11 @@
     margin: 0;
 }
 
+.DownloadButtonFixed
+{
+    display: none;
+}
+
 /* ----------------------------------- DIFFERENT SCREEN SIZES ----------------------------------- */
 
 @media only screen and (max-width: 1200px)
@@ -27,5 +32,13 @@
 
 @media only screen and (max-width: 600px)
 {
+    .PDFView
+    {
+        height: 500px;
+    }
 
+    .DownloadButtonFixed
+    {
+        display: flex;
+    }
 }

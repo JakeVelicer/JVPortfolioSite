@@ -251,37 +251,6 @@ h3
     border: none;
 }
 
-.ProjectGithubButton
-{
-    margin: 24px auto 24px auto;
-    width: 14vw;
-    height: 60px;
-    background-color: var(--SiteColorOne);
-    border-radius: 26px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-}
-
-.ProjectGithubButton p
-{
-    color: white;
-    font-size: 1.8rem;
-}
-
-.ProjectGithubButton img
-{
-    width: 32px;
-    height: 32px;
-}
-
-.ProjectGithubButton:hover
-{
-    background-color: black;
-}
-
 .ProjectStoreButtonsRow
 {
     margin: 16px auto 40px auto;
@@ -351,24 +320,6 @@ h3
     .ProjectPageItchIOEmbed
     {
         width: 202px;
-    }
-
-    .ProjectGithubButton
-    {
-        width: 66%;
-        height: 50px;
-        gap: 12px;
-    }
-
-    .ProjectGithubButton p
-    {
-        font-size: 1.5rem;
-    }
-
-    .ProjectGithubButton img
-    {
-        width: 30px;
-        height: 30px;
     }
 
     .ProjectGifImage

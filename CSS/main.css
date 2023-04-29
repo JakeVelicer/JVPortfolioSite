@@ -393,6 +393,37 @@ body:after
     letter-spacing: 0.38pt;
 }
 
+.ProjectGithubButton
+{
+    margin: 24px auto 24px auto;
+    width: 14vw;
+    height: 60px;
+    background-color: var(--SiteColorOne);
+    border-radius: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.ProjectGithubButton p
+{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.ProjectGithubButton img
+{
+    width: 32px;
+    height: 32px;
+}
+
+.ProjectGithubButton:hover
+{
+    background-color: black;
+}
+
 .MobileNavMenu, .MobileNavBarSocial, .BurgerMenuButton
 {
     display: none;
@@ -764,6 +795,7 @@ body:after
         width: 100%;
         padding: 30px 0px 30px 0px;
         background-color: var(--SiteColorOne);
+        z-index: 500;
     }
 
     .FooterContainerFlex
@@ -826,5 +858,23 @@ body:after
     {
         line-height: 1.5;
         text-align: center;
+    }
+
+    .ProjectGithubButton
+    {
+        width: 66%;
+        height: 50px;
+        gap: 12px;
+    }
+
+    .ProjectGithubButton p
+    {
+        font-size: 1.5rem;
+    }
+
+    .ProjectGithubButton img
+    {
+        width: 30px;
+        height: 30px;
     }
 }

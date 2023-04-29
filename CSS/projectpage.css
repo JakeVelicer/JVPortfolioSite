@@ -29,7 +29,8 @@ h3
 
 .ProjectParagraphPrimary
 {
-    padding: 24px 180px 24px 180px;
+    margin: 24px auto;
+    width: 74%;
     color: black;
     font-weight: 100;
     font-style: normal;
@@ -42,7 +43,8 @@ h3
 
 .ProjectParagraphPrimaryCentered
 {
-    padding: 24px 180px 24px 180px;
+    margin: 24px auto;
+    width: 74%;
     color: black;
     font-weight: 100;
     font-style: normal;
@@ -55,7 +57,8 @@ h3
 
 .ProjectParagraphSecondary
 {
-    padding: 24px 180px 24px 180px;
+    margin: 24px auto;
+    width: 74%;
     color: black;
     font-size: 1.6rem;
     font-weight: 100;
@@ -230,9 +233,11 @@ h3
 
 .ProjectPageSteamEmbed
 {
+    --r: 646 / 190;
+    aspect-ratio: var(--r);
+    width:min(100%, min(646px, 90vh*(var(--r))));
     margin: 24px auto 24px auto;
     display: block;
-    width: 646px;
     height: 190px;
     border: none;
 }
@@ -263,6 +268,7 @@ h3
 .ProjectGithubButton p
 {
     color: white;
+    font-size: 1.8rem;
 }
 
 .ProjectGithubButton img
@@ -327,5 +333,51 @@ h3
 
 @media only screen and (max-width: 600px)
 {
+    .ProjectParagraphPrimary
+    {
+        width: 90%;
+    }
+    
+    .ProjectParagraphPrimaryCentered
+    {
+        width: 90%;
+    }
 
+    .ProjectParagraphSecondary
+    {
+        width: 90%;
+    }
+
+    .ProjectPageItchIOEmbed
+    {
+        width: 202px;
+    }
+
+    .ProjectGithubButton
+    {
+        width: 66%;
+        height: 50px;
+        gap: 12px;
+    }
+
+    .ProjectGithubButton p
+    {
+        font-size: 1.5rem;
+    }
+
+    .ProjectGithubButton img
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ProjectGifImage
+    {
+        width: 100%;
+    }
+
+    .ProjectGifImageWide
+    {
+        width: 100%;
+    }
 }

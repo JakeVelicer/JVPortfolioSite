@@ -1,13 +1,108 @@
 /* ----------------------------------- DIFFERENT SCREEN SIZES ----------------------------------- */
 
+@media screen and (max-width: 1400px)
+{
+    .ImageGridColumnThree
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .ImageGridColumnFour
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
 @media only screen and (max-width: 1200px)
 {
+    .ProjectParagraphPrimary
+    {
+        width: 86%;
+    }
+    
+    .ProjectParagraphPrimaryCentered
+    {
+        width: 86%;
+    }
 
+    .ProjectParagraphSecondary
+    {
+        width: 86%;
+    }
+
+    .ProjectGifImage
+    {
+        width: 86%;
+    }
+
+    .ProjectGifImageWide
+    {
+        width: 100%;
+    }
+
+    .ImageGridRow
+    {
+        padding: 24px 0px;
+    }
+
+    .ImageGridColumnThree
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .ImageGridColumnFour
+    {
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
 }
 
 @media only screen and (max-width: 992px)
 {
+    .ProjectParagraphPrimary
+    {
+        width: 90%;
+    }
+    
+    .ProjectParagraphPrimaryCentered
+    {
+        width: 90%;
+    }
 
+    .ProjectParagraphSecondary
+    {
+        width: 90%;
+    }
+
+    .ProjectGifImage
+    {
+        width: 90%;
+    }
+
+    .ProjectGifImageWide
+    {
+        width: 100%;
+    }
+
+    .ImageGridRow
+    {
+        padding: 32px 0px;
+    }
+
+    .ImageGridColumnFour
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .ImageGalleryList
+    {
+        gap: 12px;
+        padding: 10px 20px;
+    }
 }
 
 @media only screen and (max-width: 768px)
@@ -46,6 +141,30 @@
     {
         padding: 24px 0px;
     }
+
+    .ImageGridColumnTwo
+    {
+        flex: 100%;
+        max-width: 90%;
+    }
+
+    .ImageGridColumnThree
+    {
+        flex: 100%;
+        max-width: 90%;
+    }
+
+    .ImageGridColumnFour
+    {
+        flex: 50%;
+        max-width: 90%;
+    }
+
+    .ImageGalleryList
+    {
+        gap: 12px;
+        padding: 10px 20px;
+    }
 }
 
 @media only screen and (max-width: 600px)
@@ -83,5 +202,41 @@
     .ImageGridRow
     {
         padding: 24px 0px;
+    }
+
+    .ImageGridColumnTwo
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .ImageGridColumnThree
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .ImageGridColumnFour
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .ImageGalleryList
+    {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .ImageGalleryListItem
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .ImageGalleryListItem img
+    {
+        min-width: 0;
+        width: 100%;
     }
 }

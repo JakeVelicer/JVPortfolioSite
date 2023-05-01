@@ -145,12 +145,60 @@
 
 @media only screen and (max-width: 1200px)
 {
-
+    .ProjectSortByHolder
+    {
+        padding: 0px 0px 40px 0px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .ProjectCategories
+    {
+        width: 58vw;
+        gap: 16px;
+    }
+    
+    .ProjectCategoryButton
+    {
+        width: 46%;
+        height: 24pt;
+    }
+    
+    .ProjectCategoryButtonCurrent
+    {
+        width: 46%;
+        height: 24pt;
+    }
 }
 
 @media only screen and (max-width: 992px)
 {
-
+    .ProjectSortByHolder
+    {
+        padding: 0px 0px 40px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .ProjectCategories
+    {
+        width: 72vw;
+        gap: 16px;
+    }
+    
+    .ProjectCategoryButton
+    {
+        width: 46%;
+        height: 24pt;
+    }
+    
+    .ProjectCategoryButtonCurrent
+    {
+        width: 46%;
+        height: 24pt;
+    }
 }
 
 @media only screen and (max-width: 768px)

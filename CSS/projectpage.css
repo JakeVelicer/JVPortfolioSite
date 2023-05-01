@@ -90,6 +90,8 @@ h3
     display: flex;
     flex-wrap: wrap;
     padding: 24px 8vw;
+    justify-items: center;
+    justify-content: center;
 }
 
 .ImageGridColumnTwo
@@ -156,61 +158,6 @@ h3
     max-height: 100%;
     display: block;
     object-fit: cover;
-}
-
-@media screen and (max-width: 1400px)
-{
-    .ImageGridColumnThree
-    {
-        flex: 50%;
-        max-width: 50%;
-    }
-
-    .ImageGridColumnFour
-    {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (max-width: 1000px)
-{
-    .ImageGridColumnTwo
-    {
-        flex: 100%;
-        max-width: 100%;
-    }
-
-    .ImageGridColumnThree
-    {
-        flex: 100%;
-        max-width: 100%;
-    }
-
-    .ImageGridColumnFour
-    {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px)
-{
-    .ImageGalleryList
-    {
-        gap: 8px;
-        padding: 8px;
-    }
-    .ImageGalleryListItem
-    {
-        width: 100%;
-        height: auto;
-    }
-    .ImageGalleryListItem img
-    {
-        min-width: 0;
-        width: 100%;
-    }
 }
 
 .ProjectPageYTEmbed

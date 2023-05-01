@@ -2,12 +2,30 @@
 
 @media only screen and (max-width: 1200px)
 {
+    .FeaturedElement
+    {
+        height: 360px;
+        width: 92%;
+    }
 
+    .AboutMeText
+    {
+        width: 92%;
+    }
 }
 
 @media only screen and (max-width: 992px)
 {
+    .FeaturedElement
+    {
+        height: 400px;
+        width: 92%;
+    }
 
+    .AboutMeText
+    {
+        width: 92%;
+    }
 }
 
 @media only screen and (max-width: 768px)

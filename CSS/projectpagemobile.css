@@ -1,0 +1,54 @@
+/* ----------------------------------- DIFFERENT SCREEN SIZES ----------------------------------- */
+
+@media only screen and (max-width: 1200px)
+{
+
+}
+
+@media only screen and (max-width: 992px)
+{
+
+}
+
+@media only screen and (max-width: 768px)
+{
+
+}
+
+@media only screen and (max-width: 600px)
+{
+    .ProjectParagraphPrimary
+    {
+        width: 90%;
+    }
+    
+    .ProjectParagraphPrimaryCentered
+    {
+        width: 90%;
+    }
+
+    .ProjectParagraphSecondary
+    {
+        width: 90%;
+    }
+
+    .ProjectPageItchIOEmbed
+    {
+        width: 202px;
+    }
+
+    .ProjectGifImage
+    {
+        width: 100%;
+    }
+
+    .ProjectGifImageWide
+    {
+        width: 100%;
+    }
+
+    .ImageGridRow
+    {
+        padding: 24px 0px;
+    }
+}

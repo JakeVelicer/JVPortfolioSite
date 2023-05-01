@@ -126,6 +126,7 @@
     text-align: center;
     color: white;
     transition: all ease-in-out 100ms;
+    font-family: var(--SecondaryFont);
 }
 
 .ProjectCategoryButton:hover h3
@@ -138,7 +139,7 @@
     font-size: 1.4rem;
     text-align: center;
     color: var(--SiteColorOne);
-    font-weight: 560;
+    font-family: var(--SecondaryFontBold);
 }
 
 /* ----------------------------------- DIFFERENT SCREEN SIZES ----------------------------------- */

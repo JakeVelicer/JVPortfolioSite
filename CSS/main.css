@@ -5,7 +5,8 @@
     --SiteColorThree: rgb(136, 126, 36);
     --PrimaryFont: AgencyFB, Arial, Helvetica, sans-serif;
     --PrimaryFontBold: AgencyFBBold, Arial, Helvetica, sans-serif;
-    --SecondaryFont: Arial, Helvetica, sans-serif;
+    --SecondaryFont: Jost, Arial, Helvetica, sans-serif;
+    --SecondaryFontBold: JostBold, Arial, Helvetica, sans-serif;
     --YTAspect: 840 / 473;
     --YTAspectTall: 840 / 657;
 }
@@ -21,6 +22,34 @@
     font-family: AgencyFBBold;
     src: url(../Fonts/AGENCYB.TTF);
 }
+
+@font-face
+{
+    font-family: Jost;
+    src: url(../Fonts/Jost-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: JostBold;
+    src: url(../Fonts/Jost-Bold.ttf);
+}
+
+/*
+@font-face
+{
+    font-family: Carlito;
+    src: url(../Fonts/Carlito-Regular.ttf);
+}
+*/
+
+/*
+@font-face
+{
+    font-family: Raleway;
+    src: url(../Fonts/Raleway-Regular.ttf);
+}
+*/
 
 html
 {

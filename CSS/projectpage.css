@@ -139,7 +139,7 @@ h3
 .ImageGalleryList
 {
     margin: 0;
-    padding: 24px 8vw;
+    padding: 24px 4vw;
     list-style: none;
     display: flex;
     flex-wrap: wrap;

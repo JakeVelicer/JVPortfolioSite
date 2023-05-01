@@ -95,7 +95,16 @@
 
 @media only screen and (max-width: 768px)
 {
+    .BlogsList li a
+    {
+        width: 100%;
+    }
 
+    .BlogDescription
+    {
+        font-size: 1.8rem;
+        line-height: 1.6;
+    }
 }
 
 @media only screen and (max-width: 600px)

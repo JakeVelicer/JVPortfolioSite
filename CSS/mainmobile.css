@@ -45,19 +45,19 @@
     {
         margin: 0px 0px 0px 0px;
         padding: 60px 0px 60px 0px;
-    
+        background-color: brown;
     }
     
     .RegularContainer
     {
         margin: 0px auto 0px auto;
         padding: 0px 36px 0px 36px;
-        background-color: brown;
-    }
+        background-color: transparent;
+    } 
 
     .MastheadImage
     {
-        background-size: 700pt, cover;
+        background-size: 960pt, cover;
         height: 240px;
     }
 
@@ -143,8 +143,14 @@
         padding: 40px 0px;
         display: flex;
         flex-direction: row;
-        gap: 14px;
+        gap: 18px;
         justify-content: center;
+    }
+
+    .NavBarSocialLinkedIn, .NavBarSocialYoutube, .NavBarSocialGit, .NavBarSocialTwitter
+    {
+        width: 32px;
+        height: 32px;
     }
 
     .BurgerMenuButton
@@ -166,6 +172,7 @@
         width: 100%;
         padding: 30px 0px 30px 0px;
         background-color: var(--SiteColorOne);
+        z-index: 500;
     }
 
     .FooterContainerFlex
@@ -229,6 +236,24 @@
         line-height: 1.5;
         text-align: center;
     }
+
+    .ProjectGithubButton
+    {
+        width: 42%;
+        height: 56px;
+        gap: 12px;
+    }
+
+    .ProjectGithubButton p
+    {
+        font-size: 1.6rem;
+    }
+
+    .ProjectGithubButton img
+    {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media only screen and (max-width: 600px)
@@ -250,7 +275,7 @@
     .MastheadImage
     {
         background-size: 700pt, cover;
-        height: 240px;
+        height: 220px;
     }
 
     .NavBarHeader

@@ -27,7 +27,10 @@
 
 @media only screen and (max-width: 768px)
 {
-
+    .PDFView
+    {
+        height: 940px;
+    }
 }
 
 @media only screen and (max-width: 600px)

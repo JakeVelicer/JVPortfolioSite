@@ -5,4 +5,6 @@ defaults:
       type: "html"
     values:
       layout: "default"
-    permalink: /:title/
+    permalink: /:basename/
+
+permalink: /:basename/

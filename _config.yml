@@ -5,5 +5,4 @@ defaults:
       type: "html"
     values:
       layout: "default"
-
-permalink: /:title/
+    permalink: /:title/

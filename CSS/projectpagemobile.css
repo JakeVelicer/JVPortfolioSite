@@ -42,21 +42,15 @@
         width: 100%;
     }
 
-    .ImageGridRow
+    .ImageGridColumn
     {
-        padding: 24px 0px;
+        width: 88%;
     }
 
-    .ImageGridColumnThree
+    .ImageGridRowFour img
     {
         flex: 50%;
         max-width: 50%;
-    }
-
-    .ImageGridColumnFour
-    {
-        flex: 33.3%;
-        max-width: 33.3%;
     }
 }
 
@@ -87,12 +81,18 @@
         width: 100%;
     }
 
-    .ImageGridRow
+    .ImageGridColumn
     {
-        padding: 32px 0px;
+        width: 90%;
     }
 
-    .ImageGridColumnFour
+    .ImageGridRowThree img
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .ImageGridRowFour img
     {
         flex: 50%;
         max-width: 50%;
@@ -137,24 +137,24 @@
         width: 100%;
     }
 
-    .ImageGridRow
+    .ImageGridColumn
     {
-        padding: 24px 0px;
+        width: 100%;
     }
 
-    .ImageGridColumnTwo
+    .ImageGridRowTwo img
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .ImageGridRowThree img
     {
         flex: 100%;
         max-width: 90%;
     }
 
-    .ImageGridColumnThree
-    {
-        flex: 100%;
-        max-width: 90%;
-    }
-
-    .ImageGridColumnFour
+    .ImageGridRowFour img
     {
         flex: 50%;
         max-width: 90%;

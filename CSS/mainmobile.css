@@ -1,6 +1,6 @@
 /* ----------------------------------- DIFFERENT SCREEN SIZES ----------------------------------- */
 
-@media only screen and (max-width: 1200px)
+@media only screen and (max-width: 1300px)
 {
     .RegularSection
     {
@@ -34,12 +34,17 @@
 
     .NavBarPassivePage
     {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .NavBarCurrentPage
     {
-        font-size: 24px;
+        font-size: 26px;
+    }
+
+    .NavBarName
+    {
+        font-size: 4.2rem;
     }
 }
 

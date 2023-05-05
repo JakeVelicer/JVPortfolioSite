@@ -165,6 +165,11 @@
         gap: 12px;
         padding: 10px 20px;
     }
+
+    .MastheadImage
+    {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 600px)
@@ -238,5 +243,10 @@
     {
         min-width: 0;
         width: 100%;
+    }
+    
+    .MastheadImage
+    {
+        display: none;
     }
 }

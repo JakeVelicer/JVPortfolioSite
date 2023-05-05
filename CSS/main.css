@@ -154,6 +154,7 @@ body:after
     z-index: 800;
     position: static;
     top: 0px;
+    display: block;
 }
 
 .NavBarHeader

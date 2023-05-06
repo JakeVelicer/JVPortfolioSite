@@ -111,7 +111,7 @@ h3
     row-gap: 16px;
 }
 
-.ImageGridRowTwo img
+.ImageGridRowTwo div
 {
     padding: 0px 8px;
     flex: 50%;
@@ -131,12 +131,13 @@ h3
     row-gap: 16px;
 }
 
-.ImageGridRowThree img
+.ImageGridRowThree div
 {
     padding: 0px 8px;
     flex: 33.3%;
     max-width: 33.3%;
 }
+
 
 .ImageGridRowFour
 {
@@ -151,7 +152,7 @@ h3
     row-gap: 16px;
 }
 
-.ImageGridRowFour img
+.ImageGridRowFour div
 {
     padding: 0px 8px;
     flex: 25%;

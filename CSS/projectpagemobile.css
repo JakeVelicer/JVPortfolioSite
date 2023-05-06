@@ -47,7 +47,7 @@
         width: 88%;
     }
 
-    .ImageGridRowFour img
+    .ImageGridRowFour div
     {
         flex: 50%;
         max-width: 50%;
@@ -86,13 +86,13 @@
         width: 90%;
     }
 
-    .ImageGridRowThree img
+    .ImageGridRowThree div
     {
         flex: 50%;
         max-width: 50%;
     }
 
-    .ImageGridRowFour img
+    .ImageGridRowFour div
     {
         flex: 50%;
         max-width: 50%;
@@ -142,19 +142,19 @@
         width: 100%;
     }
 
-    .ImageGridRowTwo img
+    .ImageGridRowTwo div
     {
         flex: 100%;
         max-width: 100%;
     }
 
-    .ImageGridRowThree img
+    .ImageGridRowThree div
     {
         flex: 100%;
         max-width: 90%;
     }
 
-    .ImageGridRowFour img
+    .ImageGridRowFour div
     {
         flex: 50%;
         max-width: 90%;

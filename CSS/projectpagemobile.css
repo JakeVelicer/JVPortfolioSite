@@ -204,27 +204,27 @@
         width: 100%;
     }
 
-    .ImageGridRow
+    .ImageGridColumn
     {
-        padding: 24px 0px;
+        width: 100%;
     }
 
-    .ImageGridColumnTwo
+    .ImageGridRowTwo div
     {
         flex: 100%;
         max-width: 100%;
     }
 
-    .ImageGridColumnThree
+    .ImageGridRowThree div
     {
         flex: 100%;
         max-width: 100%;
     }
 
-    .ImageGridColumnFour
+    .ImageGridRowFour div
     {
         flex: 100%;
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .ImageGalleryList

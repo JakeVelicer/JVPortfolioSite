@@ -370,3 +370,17 @@
         height: 30px;
     }
 }
+
+@media only screen and (max-width: 300px)
+{
+    .MastheadImage
+    {
+        background-size: 500pt, cover;
+        height: 220px;
+    }
+
+    .NavBarName
+    {
+        font-size: 3rem;
+    }
+}

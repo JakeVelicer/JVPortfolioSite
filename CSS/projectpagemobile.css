@@ -49,8 +49,8 @@
 
     .ImageGridRowFour div
     {
-        flex: 50%;
-        max-width: 50%;
+        flex: 33.3%;
+        max-width: 33.3%;
     }
 }
 
@@ -150,14 +150,14 @@
 
     .ImageGridRowThree div
     {
-        flex: 100%;
-        max-width: 90%;
+        flex: 50%;
+        max-width: 50%;
     }
 
     .ImageGridRowFour div
     {
         flex: 50%;
-        max-width: 90%;
+        max-width: 50%;
     }
 
     .ImageGalleryList
@@ -169,6 +169,11 @@
     .MastheadImage
     {
         display: none;
+    }
+
+    .ProjectPageSingleImage
+    {
+        width: 100%;
     }
 }
 
@@ -224,7 +229,7 @@
     .ImageGridRowFour div
     {
         flex: 100%;
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .ImageGalleryList

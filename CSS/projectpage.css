@@ -183,6 +183,14 @@ h3
     object-fit: cover;
 }
 
+.ProjectPageSingleImage
+{
+    margin: 18px auto;
+    display: block;
+    width: 90%;
+    height: 100%;
+}
+
 .ProjectPageYTEmbed
 {
     aspect-ratio: var(--YTAspect);

@@ -22,7 +22,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-
+  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -37,25 +37,6 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
-        
-  build_sitemap:
-    runs-on: ubuntu-latest
-    name: Generate a sitemap
-    steps:
-      - name: Checkout the repo
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 
-      - name: Generate the sitemap
-        id: sitemap
-        uses: cicirello/generate-sitemap@v1
-        with:
-          base-url-path: https://jakevelicer.com/
-      - name: Output stats
-        run: |
-          echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
-          echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
-          echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
 
   # Deployment job
   deploy:

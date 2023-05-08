@@ -1,107 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
 <url>
-<loc>https://jakevelicer.com/</loc>
-<lastmod>2023-05-05T12:58:02-05:00</lastmod>
+  <loc>https://jakevelicer.com/</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/404.html</loc>
-<lastmod>2023-05-05T13:15:34-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/blog.html</loc>
-<lastmod>2023-05-05T13:15:34-05:00</lastmod>
+  <loc>https://jakevelicer.com/resume</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/footer.html</loc>
-<lastmod>2023-05-05T03:29:41-05:00</lastmod>
+  <loc>https://jakevelicer.com/blog</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/page-not-found.html</loc>
-<lastmod>2023-05-05T13:15:34-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/circuit-breaker</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects-3D-modeling.html</loc>
-<lastmod>2023-05-07T02:46:42-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/simple-cues-3</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects-app-dev.html</loc>
-<lastmod>2023-05-05T13:15:34-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/hot-wings</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects-game-dev.html</loc>
-<lastmod>2023-05-05T13:15:34-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects-game-dev</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects.html</loc>
-<lastmod>2023-05-07T02:46:42-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects-app-dev</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/resume.html</loc>
-<lastmod>2023-05-05T13:15:34-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects-3D-modeling</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/Pdf/Velicer-Resume.pdf</loc>
-<lastmod>2023-04-20T19:14:35-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/bottom-line</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/blogs/halo-map-wasps-nest.html</loc>
-<lastmod>2023-05-05T12:58:02-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/vociferous-patch-attack</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects/aquaman-race-to-atlantis.html</loc>
-<lastmod>2023-05-05T13:11:37-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/untouchable</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects/bottom-line.html</loc>
-<lastmod>2023-05-05T13:11:37-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/the-workshop-cleaver</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects/circuit-breaker.html</loc>
-<lastmod>2023-05-05T22:45:35-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/potion-problems</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects/cyberpunk-mob-boss.html</loc>
-<lastmod>2023-05-05T16:51:50-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/sleeping-rogue</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects/hot-wings.html</loc>
-<lastmod>2023-05-05T22:45:35-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/aquaman-race-to-atlantis</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects/how-star-wars-could-have-gone-part-3.html</loc>
-<lastmod>2023-05-05T13:11:37-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/scrapyard-skirmish</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects/potion-problems.html</loc>
-<lastmod>2023-05-05T13:11:37-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/ursa-major</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects/scrapyard-skirmish.html</loc>
-<lastmod>2023-05-05T22:45:35-05:00</lastmod>
+  <loc>https://jakevelicer.com/projects/how-star-wars-could-have-gone-part-3</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects/simple-cues-3.html</loc>
-<lastmod>2023-05-05T13:11:37-05:00</lastmod>
+  <loc>https://jakevelicer.com/Pdf/Velicer-Resume.pdf</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://jakevelicer.com/projects/sleeping-rogue.html</loc>
-<lastmod>2023-05-05T13:11:37-05:00</lastmod>
+  <loc>https://jakevelicer.com/blogs/halo-map-wasps-nest</loc>
+  <lastmod>2023-05-07T07:47:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
-<url>
-<loc>https://jakevelicer.com/projects/the-workshop-cleaver.html</loc>
-<lastmod>2023-05-07T02:27:57-05:00</lastmod>
-</url>
-<url>
-<loc>https://jakevelicer.com/projects/untouchable.html</loc>
-<lastmod>2023-05-05T13:11:37-05:00</lastmod>
-</url>
-<url>
-<loc>https://jakevelicer.com/projects/ursa-major.html</loc>
-<lastmod>2023-05-05T22:45:35-05:00</lastmod>
-</url>
-<url>
-<loc>https://jakevelicer.com/projects/vociferous-patch-attack.html</loc>
-<lastmod>2023-05-05T13:11:37-05:00</lastmod>
-</url>
+
+
 </urlset>

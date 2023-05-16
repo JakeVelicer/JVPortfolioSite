@@ -4,13 +4,11 @@
 {
     .ImageGridColumnThree
     {
-        flex: 50%;
         max-width: 50%;
     }
 
     .ImageGridColumnFour
     {
-        flex: 50%;
         max-width: 50%;
     }
 }
@@ -49,7 +47,6 @@
 
     .ImageGridRowFour div
     {
-        flex: 33.3%;
         max-width: 33.3%;
     }
 }
@@ -88,13 +85,11 @@
 
     .ImageGridRowThree div
     {
-        flex: 50%;
         max-width: 50%;
     }
 
     .ImageGridRowFour div
     {
-        flex: 50%;
         max-width: 50%;
     }
 
@@ -144,19 +139,17 @@
 
     .ImageGridRowTwo div
     {
-        flex: 100%;
         max-width: 100%;
     }
 
     .ImageGridRowThree div
     {
-        flex: 50%;
         max-width: 50%;
     }
 
     .ImageGridRowFour div
     {
-        flex: 50%;
+
         max-width: 50%;
     }
 
@@ -216,19 +209,16 @@
 
     .ImageGridRowTwo div
     {
-        flex: 100%;
         max-width: 100%;
     }
 
     .ImageGridRowThree div
     {
-        flex: 100%;
         max-width: 100%;
     }
 
     .ImageGridRowFour div
     {
-        flex: 100%;
         max-width: 100%;
     }
 

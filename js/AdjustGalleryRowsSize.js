@@ -1,6 +1,6 @@
 
-window.addEventListener('load', AdjustRowHeights);
-window.addEventListener('resize', AdjustRowHeightsAgain);
+document.addEventListener('DOMContentLoaded', AdjustRowHeights);
+document.addEventListener('resize', AdjustRowHeightsAgain);
 
 var twoElements = 0;
 var threeElements = 0;

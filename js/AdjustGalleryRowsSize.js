@@ -1,6 +1,6 @@
 
-document.addEventListener('DOMContentLoaded', AdjustRowHeights);
-document.addEventListener('resize', AdjustRowHeightsAgain);
+document.addEventListener('DOMContentLoaded', AdjustImageHeights);
+document.addEventListener('resize', AdjustImageHeightsAgain);
 
 var twoElements = 0;
 var threeElements = 0;
@@ -11,7 +11,7 @@ var minThreeImageHeight = 0;
 var minFourImageHeight = 0;
 
 
-function AdjustRowHeights() {
+function AdjustImageHeights() {
 
   if (IsMobileDevice() === false)
   {
@@ -61,7 +61,7 @@ function AdjustRowHeights() {
 
 }
 
-function AdjustRowHeightsAgain() {
+function AdjustImageHeightsAgain() {
 
   if (IsMobileDevice() === false)
   {
@@ -99,7 +99,6 @@ function AdjustRowHeightsAgain() {
   }
 }
 
-// Check if the code is running on a mobile device
 function IsMobileDevice()
 {
   return /Mobi/i.test(navigator.userAgent);

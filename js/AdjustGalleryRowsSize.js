@@ -13,6 +13,10 @@ var minFourImageHeight = 0;
 
 function AdjustRowHeights() {
 
+  var screenWidth = window.innerWidth;
+
+  if (screenWidth > 1000)
+  {
     twoElements = Array.from(document.querySelectorAll('.ImageGridRowTwo#AdjustHeight'));
 
     twoElements.forEach(row => {
@@ -54,12 +58,15 @@ function AdjustRowHeights() {
       });
 
     });    
+  }
 
 
 }
 
 function AdjustRowHeightsAgain() {
 
+  if (screenWidth > 1000)
+  {
 
     twoElements.forEach(row => {
       
@@ -91,5 +98,5 @@ function AdjustRowHeightsAgain() {
 
     });
     console.log('Resolution changed!');
-
+  }
 }

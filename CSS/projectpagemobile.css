@@ -178,7 +178,11 @@
 
     .ProjectPageYTEmbedWide
     {
-        margin: 18px auto;
+        aspect-ratio: var(--YTAspect);
+        width:min(100%, min(840px, 90vh*(var(--YTAspect))));
+        margin: 44px auto;
+        display: block;
+        border: none;
     }
 }
 

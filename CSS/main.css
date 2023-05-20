@@ -9,6 +9,7 @@
     --SecondaryFontBold: JostBold, Arial, Helvetica, sans-serif;
     --YTAspect: 840 / 473;
     --YTAspectTall: 840 / 657;
+    --YTAspectWide: 1920 / 540;
 }
 
 @font-face

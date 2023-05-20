@@ -175,6 +175,11 @@
     {
         width: 100%;
     }
+
+    .ProjectPageYTEmbedWide
+    {
+        margin: 18px auto;
+    }
 }
 
 @media only screen and (max-width: 600px)

@@ -37,6 +37,7 @@ h3
     align-items: center;
     align-content: center;
     column-gap: 10px;
+    row-gap: 4px;
 }
 
 .ProjectDetailsContainer div div

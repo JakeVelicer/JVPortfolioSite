@@ -188,14 +188,22 @@
 
 @media only screen and (max-width: 600px)
 {
+    .ProjectDetailsContainer div div
+    {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     .ProjectDetailsContainer div div h2:nth-child(1)
     {
         font-size: 2.0rem;
+        order: 1;
     }
 
     .ProjectDetailsContainer div div h2:nth-child(2)
     {
         font-size: 1.6rem;
+        order: 2;
     }
 
     .ProjectParagraphPrimary

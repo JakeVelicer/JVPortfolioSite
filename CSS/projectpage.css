@@ -13,7 +13,7 @@ h3
     padding: 16px 0px;
 }
 
-.ProjecDetailsContainer
+.ProjectDetailsContainer
 {
     margin: 20px auto;
     width: fit-content;
@@ -26,20 +26,26 @@ h3
     flex-wrap: wrap;
 }
 
-.ProjecDetailsContainer div
+.ProjectDetailsContainer div
 {
+    margin: 2px 2px;
     width: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-items: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-content: center;
     column-gap: 10px;
 }
 
-.ProjecDetailsContainer div div h2:nth-child(1)
+.ProjectDetailsContainer div div
+{
+    flex-wrap: nowrap;
+}
+
+.ProjectDetailsContainer div div h2:nth-child(1)
 {
     display: block;
     padding: 2px 10px;
@@ -55,7 +61,7 @@ h3
     word-spacing: normal;
 }
 
-.ProjecDetailsContainer div div h2:nth-child(2)
+.ProjectDetailsContainer div div h2:nth-child(2)
 {
     display: block;
     padding: 2px 20px;

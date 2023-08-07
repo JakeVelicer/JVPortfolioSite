@@ -188,6 +188,16 @@
 
 @media only screen and (max-width: 600px)
 {
+    .ProjectDetailsContainer div div h2:nth-child(1)
+    {
+        font-size: 2.0rem;
+    }
+
+    .ProjectDetailsContainer div div h2:nth-child(2)
+    {
+        font-size: 1.6rem;
+    }
+
     .ProjectParagraphPrimary
     {
         width: 90%;

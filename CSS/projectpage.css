@@ -128,6 +128,22 @@ h3
     text-align: left;
 }
 
+.ProjectParagraphBulletPoint
+{
+    margin: 2px auto;
+    width: 74%;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1.8;
+    word-spacing: normal;
+    text-align: center;
+}
+
 .ProjectGifImage
 {
     margin: 30px auto 30px auto;

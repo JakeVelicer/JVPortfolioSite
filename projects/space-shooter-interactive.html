@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../Img/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../Img/Favicon/favicon-16x16.png">
     <link rel="manifest" href="../Img/Favicon/site.webmanifest">
-    <meta property="og:image" content="https://jakevelicer.com/Img/ProjectThumbs/HotWingsThumb.jpg">
+    <meta property="og:image" content="https://jakevelicer.com/Img/ProjectThumbs/SpaceShooterThumb.jpg">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/mainmobile.css">
@@ -81,7 +81,7 @@
 
     <section class="RegularSection">
         <div class="RegularContainer">
-            <h1>Space Shooter Interactive</h1>
+            <h1>Interactive Sci-Fi Shooter</h1>
             <div class="ProjectDetailsContainer">
                 <div>
                     <div>
@@ -105,8 +105,59 @@
                 </div>
             </div>
             <p class="ProjectParagraphPrimary">Space Shooter is a moc game made for on set use with controls to customize the game for the intended scenario. The game includes first and third person camera player controllers. It also includes player vs player and player vs NPC modes that the user can choose from. The gameplay itself is based around a simple sci fi shooter deathmatch. If a player or npc gets killed, they respawn, and the game goes on infinitely.</p>
-            <iframe class="ProjectPageYTEmbed" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?si=6asfg3yNg_2Gmu3a" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p class="ProjectParagraphPrimary">Text</p>
+            <div class="ImageGridColumn">
+                <div class="ImageGridRowTwo">
+                    <div><img src="../Img/ProjectPages/SpaceShooter/SciFiShooterSettingsMenu.jpg" alt="Screenshot of Interactive Sci-Fi Shooter App"></div>
+                    <div><img src="../Img/ProjectPages/SpaceShooter/SciFiShooterFirstPersonOnePlayer.jpg" alt="Screenshot of Interactive Sci-Fi Shooter App"></div>
+                </div>
+                <div class="ImageGridRowTwo">
+                    <div><img src="../Img/ProjectPages/SpaceShooter/SciFiShooterThirdPersonOnePlayer.jpg" alt="Screenshot of Interactive Sci-Fi Shooter App"></div>
+                    <div><img src="../Img/ProjectPages/SpaceShooter/SciFiShooterFirstPersonTwoPlayer.jpg" alt="Screenshot of Interactive Sci-Fi Shooter App"></div>
+                </div>
+            </div>
+            <p class="ProjectParagraphPrimary">I was assigned in late July of 2023 to take a Unity project that was used to create an animation of someone playing a Sci Fi shooter, intended to show in the background of a shot, and make it interactive again. I say again because the project was originally based on a template, but all of that had been stripped out and was no longer there. I needed to go in and reprogram everything, but specifically with the ability to edit game stats in real time from a menu. That way the user can make a specific scenario more likely to happen.</p>
+            <p class="ProjectParagraphPrimary">For example:</p>
+            <div class="RegularContainer">
+                <div><p class="ProjectParagraphPrimary">• The player can have a lot less health than the enemy so they die faster when shot.</p></div>
+                <div><p class="ProjectParagraphPrimary">• You can increase the amount of enemies so that the player is more likely to run into one.</p></div>
+                <div><p class="ProjectParagraphPrimary">• You can have one player do more damage than the other player so it is guaranteed that one always wins if the story calls for it</p></div>
+                <div><p class="ProjectParagraphPrimary">• etc.</p></div>
+            </div>
+            <p class="ProjectParagraphPrimary">I quickly got started and since this was in the middle of both the Hollywood Writers and Actors guild strikes of 2023 it ended up being my main focus for the next couple months.</p>
+            <p class="ProjectParagraphPrimary">I started by implementing a first person character controller utilizing Unity's “newer” input system along with the plugin CineMachine. I also re-connected the animations that were already in the project to this new player controller. Things were already looking pretty good for something to be shown in the background of a TV show. It was valuable to code the connection from the player movement to the animations as they used a blend tree which I hadn't had the opportunity to work with before.</p>
+            <p class="ProjectParagraphPrimary">The mechanic I gained the most experience from working on this project though was implementing the NPCs. I had used Unity's navmesh pathfinding system before, but this was the first project where I was entirely in control of how to utilize it for the NPCs. I basically started by stripping down parts of the player controller that I knew only the NPCs would use. This made me end up with a robust inheritance system for characters in the game that I should have started with in hindsight. Definitely something to keep in mind for future projects. Since aiming and shooting had been implemented into the base class I just needed to pass in the values to aim at for the NPCs.</p>
+            <p class="ProjectParagraphPrimary">After that I worked on the bigger task of implementing the pathfinding. Specifically I wanted them to patrol the level until they ran into the player. They would then enter their chase and attack state until the player was out of range. If the player got out of range they would resume patrolling. I created a pathfinding manager that contained the “paths” in lists of “points” that could be placed in the level. Once they reached the end of a point in the list they would randomly choose between connecting paths, or if there were none to choose from, turn around. A simple, straightforward system that definitely isn't anything new, but was all that we needed for what we were going for.</p>
+            <h2>Isolated Pathfinding Test</h2>
+            <iframe class="ProjectPageYTEmbed" src="https://www.youtube-nocookie.com/embed/alDXLZFIRg4?si=CG5UNTukr-ncKcz0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h2>Pathfinding System in Level Test</h2>
+            <iframe class="ProjectPageYTEmbed" src="https://www.youtube-nocookie.com/embed/mX_SW4MZXII?si=x2oQccdpmCT4rO3t" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="ProjectParagraphPrimary">Lastly I implemented the settings menu for modifying the game stats. We have menus like this for each of the projects I work on at Modern Motion Pictures so I am quite used to building them at this point.</p>
+            <h2>Progress Update Demo</h2>
+            <iframe class="ProjectPageYTEmbed" src="https://www.youtube-nocookie.com/embed/h1Fq-nk7g7s?si=XlJvuRnsDMNGr_hR" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="ProjectParagraphPrimary">By late September I had the team review my progress and received their feedback. I then made adjustments accordingly and implemented the rest of the features requested including a third person character controller. I had the team review that version which was then approved and deemed production ready. It has been used on at least on production as of writing this.</p>
+            <h2>Showcase of Version 1.0</h2>
+            <iframe class="ProjectPageYTEmbed" src="https://www.youtube-nocookie.com/embed/6HAJNVfH8nc?si=kDgpNZruXjpNOwz1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h2>Features Implemented</h2>            
+            <div class="ImageGridColumn">
+                <div class="ImageGridRowThree">
+                    <div><p class="ProjectParagraphBulletPoint">• First Person Character Controller</p></div>
+                    <div><p class="ProjectParagraphBulletPoint">• 3rd Person Character Controller</p></div>
+                    <div><p class="ProjectParagraphBulletPoint">• Player vs Player</p></div>
+                </div>
+                <div class="ImageGridRowThree">
+                    <div><p class="ProjectParagraphBulletPoint">• Player vs NPC</p></div>
+                    <div><p class="ProjectParagraphBulletPoint">• Shooting</p></div>
+                    <div><p class="ProjectParagraphBulletPoint">• Health and Damage</p></div>
+                </div>
+                <div class="ImageGridRowThree">
+                    <div><p class="ProjectParagraphBulletPoint">• Pathfinding System</p></div>
+                    <div><p class="ProjectParagraphBulletPoint">• Stats Settings Adjustment Panel</p></div>
+                    <div><p class="ProjectParagraphBulletPoint">• Doors</p></div>
+                </div>
+                <div class="ImageGridRowThree">
+                    <div><p class="ProjectParagraphBulletPoint">• Saving/Loading</p></div>
+                </div>
+            </div>
         </div>
     </section>
 

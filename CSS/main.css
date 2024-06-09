@@ -455,6 +455,16 @@ body:after
     background-color: black;
 }
 
+.ButtonList
+{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
 .MobileNavMenu, .MobileNavBarSocial, .BurgerMenuButton
 {
     display: none;

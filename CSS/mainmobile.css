@@ -384,3 +384,11 @@
         font-size: 3rem;
     }
 }
+
+@media only screen and (min-height: 1300px)
+{
+    .ButtonList
+    {
+        margin-bottom: 160px;
+    }
+}

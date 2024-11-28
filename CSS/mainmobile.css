@@ -197,13 +197,22 @@
         order: 1;
     }
 
+    .FooterContainerFlex ul:nth-child(1) a
+    {
+        text-align: center;
+    }
     
     .FooterContainerFlex ul:nth-child(2)
     {
         flex-basis: 100%;
-        text-align: center;
         padding-bottom: 20px;
+        text-align: center;
         order: 2;
+    }
+
+    .FooterContainerFlex ul:nth-child(2) a
+    {
+        text-align: center;
     }
 
     .FooterContainerFlex ul:nth-child(3)
@@ -212,11 +221,6 @@
         text-align: center;
         padding-bottom: 20px;
         order: 4;
-    }
-
-    .FooterContainerFlex ul:nth-child(1) a
-    {
-        text-align: center;
     }
 
     .FooterContainerFlex ul:nth-child(3) p

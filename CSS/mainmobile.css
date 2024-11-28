@@ -214,6 +214,11 @@
         order: 4;
     }
 
+    .FooterContainerFlex ul:nth-child(1) a
+    {
+        text-align: center;
+    }
+
     .FooterContainerFlex ul:nth-child(3) p
     {
         color: rgba(255, 255, 255, 0.5);

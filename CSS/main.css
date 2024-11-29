@@ -139,7 +139,7 @@ body:after
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(../Img/Social/SocialIconGithubHover.png) url(../Img/Social/SocialIconLinkedInHover.png) url(../Img/Social/SocialIconTwitterHover.png) url(../Img/Social/SocialIconYoutubeHover.png);
+    content: url(../Img/Social/SocialIconGithubHover.png) url(../Img/Social/SocialIconLinkedInHover.png) url(../Img/Social/SocialIconThreadsHover.png) url(../Img/Social/SocialIconYoutubeHover.png);
 }
 
 .MastheadImage
@@ -324,6 +324,21 @@ body:after
 .NavBarSocialTwitter:hover
 {
     background-image: url(../Img/Social/SocialIconTwitterHover.png);
+}
+
+.NavBarSocialThreads
+{
+    width: 24px;
+    height: 24px;
+    background-image: url(../Img/Social/SocialIconThreads.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease-in-out 100ms;
+}
+
+.NavBarSocialThreads:hover
+{
+    background-image: url(../Img/Social/SocialIconThreadsHover.png);
 }
 
 .FooterContainer

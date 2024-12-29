@@ -144,6 +144,37 @@ h3
     text-align: center;
 }
 
+.BulletPointListWithIndents
+{
+    margin: 30px auto;
+    width: 74%;
+}
+
+.BulletPointListWithIndents ul li
+{
+    margin-left: 40px;
+}
+
+.BulletPointListWithIndents ul ul li
+{
+    margin-left: 80px;
+}
+
+.BulletPointInList
+{
+    margin: 2px auto;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1.8;
+    word-spacing: normal;
+    text-align: left;
+}
+
 .ProjectGifImage
 {
     margin: 30px auto 30px auto;

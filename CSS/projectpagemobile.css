@@ -32,6 +32,11 @@
         width: 86%;
     }
 
+    .BulletPointListWithIndents
+    {
+        width: 86%;
+    }
+
     .ProjectGifImage
     {
         width: 86%;
@@ -67,6 +72,11 @@
     }
 
     .ProjectParagraphSecondary
+    {
+        width: 90%;
+    }
+
+    .BulletPointListWithIndents
     {
         width: 90%;
     }
@@ -118,6 +128,11 @@
     }
 
     .ProjectParagraphSecondary
+    {
+        width: 90%;
+    }
+
+    .BulletPointListWithIndents
     {
         width: 90%;
     }
@@ -215,6 +230,11 @@
     }
 
     .ProjectParagraphSecondary
+    {
+        width: 90%;
+    }
+
+    .BulletPointListWithIndents
     {
         width: 90%;
     }

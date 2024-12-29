@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake Velicer's Blog - The 4 Bs</title>
+    <title>Jake Velicer's Blog - Combat Update</title>
     <meta name="description" content="An update on some of the stand out work I have done so far on the side project game we are working on: Androidmada">
     <link rel="apple-touch-icon" sizes="180x180" href="../Img/Favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../Img/Favicon/favicon-32x32.png">
@@ -81,9 +81,40 @@
 
     <section class="RegularSection">
         <div class="RegularContainer">
-            <h1>Androidmada Update - The 4 Bs</h1>
+            <h1>Androidmada - The Combat Update</h1>
             <h2>12/30/24</h2>
-            <p class="ProjectParagraphPrimary">Text.</p>
+            <p class="ProjectParagraphPrimary">I have been continuing work on a game with some colleagues as a side project. It is a top-down twin-stick shooter with light RTS elements set in a sci-fi world! The player can command the placement of their allies and they will auto target enemies and shoot at them. We built a fleshed out prototype we called MVS (Minimum Vertical Slice) that I made a blog post on previously that you can find here.</p>
+            <p class="ProjectParagraphPrimary">Shortly after we entered production around July of 2023. There are two major systems I have worked on since then that I wanted to talk about.</p>
+            <h2>The Encounter System</h2>
+            <p class="ProjectParagraphPrimary">The first is the implementation of the Encounter Manager. This included triggers for when an encounter will start, enemy assignment, types of waves, spawn points, basically anything related to the encounters in the game are connected to this manager.</p>
+            <p class="ProjectParagraphPrimary">When I first took on this task, we had decided to store all waves, and the enemies in them, as scriptable objects. I did this so that designers could easily store waves for reuse in different encounters. I went as far as coding an entire working system around this at first. But once our designer Warren experimented with making encounters this way, we quickly realized in practice the process was way too tedious. Basically everything was obfuscated between the wave scriptable objects, and the wave handlers in the scene that those scriptable objects needed to be assigned to. As a result, anything that was in the scene itself could not be assigned to the scriptable objects obviously.</p>
+            <p class="ProjectParagraphPrimary">For example, to choose which spawn point you wanted an enemy to spawn at, I had it so you had to enter a number for each enemy on the wave scriptable object. So you would have to go back and forth between the wave scriptable object and the wave handler in the scene (with the list of spawn points) to know which numbers correlated to each spawn point. And you had to do that for multiple encounters. It was all too confusing, and the time that could be theoretically saved by having the waves and encounters stored in scriptable objects was being wasted by how long it took to hook everything up in the scene.</p>
+            <p class="ProjectParagraphPrimary">So we went back to the drawing board and decided that instead of trying to be fancy, we would just have all assignments take place in a scene, only using scriptable objects for creating groups of enemies. And if a designer did want to save a whole encounter, or a whole wave, they could still make a prefab of it to edit certain parts of it while not in a scene.</p>
+            <h3>Here is a tree of how the encounter system is laid out, simplified down to the basics.</p>
+            <ul class="BulletPointListWithIndents">
+                <li><p class="BulletPointInList">• We have an Encounter Manager where you assign Encounters</p></li>
+                <li><p class="BulletPointInList">• Encounters where you can assign different types of Waves</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Encounters based on different end conditions: Waves finished, endless until objective completed, etc.</p></li>
+                </ul> 
+                <li><p class="BulletPointInList">• Waves</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Waves based on different end conditions: The percentage of enemies killed, a timer, all enemies killed, etc.</p></li>
+                    <li><p class="BulletPointInList">• On a Wave you can assign different enemies, their spawn points, and other settings.</p></li>
+                </ul>
+            </ul>
+            <p class="ProjectParagraphPrimary">There are different settings that a designer can configure that I will eventually go more in depth about. I tried to make the system as flexible as possible without having it be too confusing. For example, there are a couple settings that can be set on an encounter wide basis that waves can use by default, or a designer can override that setting on the wave itself. I utilize tooltips to explain certain functionality, and we are using Odin Inspector to hide/show certain values in the inspector depending on the settings selected.</p>
+            <img class="ProjectGifImage" src="../Img/BlogPages/7-14-23/PlacementExample.gif" alt="Showcase of Unit Placement in MVS Test for Project Breakernam">
+            <p class="ProjectParagraphPrimary">That pretty much wraps up the encounter system for now. The designers have been using it regularly to make levels and whenever a feature is requested it has been easy enough to add it in a short amount of time.</p>
+            <h2>The 4 Bs</h2>
+            <p class="ProjectParagraphPrimary">The second is the four different abilities for the allies, or as our designer Warren has dubbed them, the 4 Bs. <span style="font-weight: bold">Build, Blast, Barricade, and Bait.</span></p>
+            <p class="ProjectParagraphPrimary">To implement these abilities, I first had to implement Scrap. Right now we have it so enemies drop it when they die on a percentage basis. The player can pick it up and can spend it to use their Ally abilities.</p>
+            <p class="ProjectParagraphPrimary">The first ability I implemented was <span style="font-weight: bold">Blast</span>. Blast is a timed power-up that increases the damage output of the bullets that the allies shoot. I implemented this by resetting each ally's Attack Manager when the event is triggered, passing through the powered up Blast attack stats. The other programmer on the project Scott Duman helped me implement this, specifically with resetting the allies attack stats back to default once the Blast timer had finished in the Attack Manager.</p>
+            <p class="ProjectParagraphPrimary">The second ability I implemented was <span style="font-weight: bold">Build</span> which was relatively straightforward. The player can spend scrap to Build a new Ally. So basically I just have a new Ally spawn in. I just had to make sure it worked with the Ally Manager properly and that all the data that needs to be connected is connected properly. The other programmer on the project Scott Duman helped me with the implementation of this mechanic as well since he initially set up the Ally Manager.</p>
+            <p class="ProjectParagraphPrimary">The third ability I implemented was <span style="font-weight: bold">Barricade</span>, which was the most involved but also most fun ability I have implemented yet. Once activated, a shield forms around the center of all the allies. This shield can be walked through by the player. While the player and allies are inside the shield they cannot be damaged. The player and the allies can shoot through the shield to the outside to damage enemies. Right now the shield only goes away once the enemies have damaged it enough. It has its own health bar since it inherits from our damageable object base class and stays in the center of allies at all times, even while they are moving (This is because it is attached to the “corral”: a single pathfinding agent that the allies always follow). It is a fun mechanic and can lead to some cool encounters that depend on the player using it.</p>
+            <p class="ProjectParagraphPrimary">Lastly we have <span style="font-weight: bold">Bait</span>. This ability once again connects to Scott's Attack Manager. When the event is invoked a function on the Attack Manager for each enemy is called to reassign their target to an ally explicitly instead of the player. The player can then damage them without them attacking back. Currently that is all this ability does and while it can lead to some gameplay opportunities, we are reevaluating its functionality after the playtesting we observed showing off the game at MDEV 2024.</p>
+            <p class="ProjectParagraphPrimary">And that sums up the Ally abilities for now!</p>
+            <p class="ProjectParagraphPrimary">There is lots to do as we target November of next year to have a vertical slice to show. I am excited about what we plan to do for the game and am looking forward to sharing more about it!</p>
         </div>
     </section>
 

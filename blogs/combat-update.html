@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../Img/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../Img/Favicon/favicon-16x16.png">
     <link rel="manifest" href="../Img/Favicon/site.webmanifest">
-    <meta property="og:image" content="https://jakevelicer.com/Img/BlogPages/2-4-24/BeltingBigBobbyTheBass-GameplayDemonstration-1.jpg">
+    <meta property="og:image" content="https://jakevelicer.com/Img/BlogPages/12-31-24/EncounterSystemThumb2.jpg">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/mainmobile.css">
@@ -82,7 +82,7 @@
     <section class="RegularSection">
         <div class="RegularContainer">
             <h1>Androidmada - The Combat Update</h1>
-            <h2>12/30/24</h2>
+            <h2>12/31/24</h2>
             <p class="ProjectParagraphPrimary">I have been continuing work on a game with some colleagues as a side project. It is a top-down twin-stick shooter with light RTS elements set in a sci-fi world! The player can command the placement of their allies and they will auto target enemies and shoot at them. We built a fleshed out prototype we called MVS (Minimum Vertical Slice) that I made a blog post on previously that you can find here.</p>
             <p class="ProjectParagraphPrimary">Shortly after we entered production around July of 2023. There are two major systems I have worked on since then that I wanted to talk about.</p>
             <h2>The Encounter System</h2>
@@ -90,7 +90,7 @@
             <p class="ProjectParagraphPrimary">When I first took on this task, we had decided to store all waves, and the enemies in them, as scriptable objects. I did this so that designers could easily store waves for reuse in different encounters. I went as far as coding an entire working system around this at first. But once our designer Warren experimented with making encounters this way, we quickly realized in practice the process was way too tedious. Basically everything was obfuscated between the wave scriptable objects, and the wave handlers in the scene that those scriptable objects needed to be assigned to. As a result, anything that was in the scene itself could not be assigned to the scriptable objects obviously.</p>
             <p class="ProjectParagraphPrimary">For example, to choose which spawn point you wanted an enemy to spawn at, I had it so you had to enter a number for each enemy on the wave scriptable object. So you would have to go back and forth between the wave scriptable object and the wave handler in the scene (with the list of spawn points) to know which numbers correlated to each spawn point. And you had to do that for multiple encounters. It was all too confusing, and the time that could be theoretically saved by having the waves and encounters stored in scriptable objects was being wasted by how long it took to hook everything up in the scene.</p>
             <p class="ProjectParagraphPrimary">So we went back to the drawing board and decided that instead of trying to be fancy, we would just have all assignments take place in a scene, only using scriptable objects for creating groups of enemies. And if a designer did want to save a whole encounter, or a whole wave, they could still make a prefab of it to edit certain parts of it while not in a scene.</p>
-            <h3>Here is a tree of how the encounter system is laid out, simplified down to the basics.</p>
+            <h3>Here is a tree of how the encounter system is laid out, simplified down to the basics.</h3>
             <ul class="BulletPointListWithIndents">
                 <li><p class="BulletPointInList">• We have an Encounter Manager where you assign Encounters</p></li>
                 <li><p class="BulletPointInList">• Encounters where you can assign different types of Waves</p></li>
@@ -104,7 +104,8 @@
                 </ul>
             </ul>
             <p class="ProjectParagraphPrimary">There are different settings that a designer can configure that I will eventually go more in depth about. I tried to make the system as flexible as possible without having it be too confusing. For example, there are a couple settings that can be set on an encounter wide basis that waves can use by default, or a designer can override that setting on the wave itself. I utilize tooltips to explain certain functionality, and we are using Odin Inspector to hide/show certain values in the inspector depending on the settings selected.</p>
-            <img class="ProjectGifImage" src="../Img/BlogPages/7-14-23/PlacementExample.gif" alt="Showcase of Unit Placement in MVS Test for Project Breakernam">
+            <h2>Encounter Manager Hookup Demo in it's Current State</h2>
+            <iframe class="ProjectPageYTEmbed" src="https://www.youtube-nocookie.com/embed/eXa4R2HEg4U?si=TPVSBneHptZ_8mar" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p class="ProjectParagraphPrimary">That pretty much wraps up the encounter system for now. The designers have been using it regularly to make levels and whenever a feature is requested it has been easy enough to add it in a short amount of time.</p>
             <h2>The 4 Bs</h2>
             <p class="ProjectParagraphPrimary">The second is the four different abilities for the allies, or as our designer Warren has dubbed them, the 4 Bs. <span style="font-weight: bold">Build, Blast, Barricade, and Bait.</span></p>

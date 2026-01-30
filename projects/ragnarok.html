@@ -106,9 +106,155 @@
             </div>
             <p class="ProjectParagraphPrimary">Ragnarok is a single player, beat-em-up game where you play as Ragnarok fighting against the guards of Valhalla. You must destroy your enemies to accumulate the most points and gain the highest score. It was developed in Unity over a four month period with a development emphasis on solid core mechanics. I programmed the game along with Ryan Voss. I mainly programmed enemy A.I., civilian A.I., gameplay U.I., and animation controllers.</p>
             <iframe class="ProjectPageYTEmbed" src="https://www.youtube-nocookie.com/embed/CjLJmoJrKEE?si=C0qO91Fjsa5ilI7O" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <a class="ProjectGithubButton" href="https://docs.google.com/document/d/18SuLZ9ifVnjqShK31tfjk3P585CsRuJ-DB-r5jzuZ4k/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-                <p>Development Blog</p>
-            </a>
+            <h2>Development Blog</h2>
+            <ul class="BulletPointListWithIndents">
+                <li><p class="BulletPointInList">• 2-14 to 2-17</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Concepted out main concepts of game and central mechanics.</p></li>
+                </ul> 
+                <li><p class="BulletPointInList">• 2-19</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Created Unity project and set up main scenes. Expanded on concept ideas and narrowed core mechanic to just running around and attacking.</p></li>
+                </ul>
+                                <li><p class="BulletPointInList">• 2-20</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Jake - Started working on Enemies.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 2-21</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Jake - Programmed the enemies to chase the player.</p></li>
+                    <li><p class="BulletPointInList">• Ryan - Programmed the player to move with arrow keys and to return which direction it is facing for attacking.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 2-22 to 2-24</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Jake - Made sword animation, programmed the sword animation to trigger when enemy gets close to the player, programmed the enemy to die when they are hit by the players sword, and programmed the enemy's sprite to flip depending on which direction they chase the player.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 2-25</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Added continuous spawning for enemies. Character model flips for which way it is facing.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Polished animation, and programmed the player's sword to only kill enemies when you swing it.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 2-26</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Jake - Implemented respawning for the player.</p></li>
+                    <li><p class="BulletPointInList">• Ryan - Researched the pulse mechanic.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 2-27</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Fixed the animation repeating when attacking.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Programmed the pulse mechanic for the player and it's animation for it. It's overpowered right now as there is no cool down. Once that is implemented hopefully it will be all the more rewarding.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 2-28</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Jake - Implemented UI based health bar for the player that decreases by width.</p></li>
+                    <li><p class="BulletPointInList">• Ryan - Researched and started working on fireball projectiles.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 3-4</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Programmed the fireball projectiles, they don't get destroyed when hitting stuff for some reason. Will have to figure that out tomorrow morning</p></li>
+                    <li><p class="BulletPointInList">• Jake - Spent a lot of time trying to get the health bar to work based on percent of health missing rather than total health missing. This is a problem we are still having to work on.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 3-5</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Implemented a camera system that stops when hitting the boundaries of the map and follows the player around.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Fixed the fireball projectile to damage the player and destroy itself upon hitting an enemy. Got help from Ethan on how to make the player health bar work by a percentage based system.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 3-6</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Fixed the camera so that it is still attached to the player when they respawn.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Implemented enemy health bars and attached them to the enemy models.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 3-7</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Changed damage values for attacks. Wanted to see what fireballs were like with no cooldown and being able to just hold the attack button. We now have a flamethrower and it is more fun.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Working on better pathfinding, sword swings now hit once, sometimes still trigger 2 hits. This is now a feature and we are claiming it as critical strikes.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 3-17</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Made assets for a boss and an animation for lightning.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 3-19</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Health, damage, and armor pickups work, now I need them to drop from dead enemies.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Decided it would be better to not have everything based around multiple player colliders as it has introduced issues.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 3-21</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Pickups didn't actually work, fixed armor and damage bonus.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Changed enemy tracking and attacking to be based around player distance rather than colliders, but after a while they just stop chasing the player and never attack.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 3-25</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Jake - Changed the spawner to be based around player distance rather than colliders as well.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 3-26</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Working on making the Boss attack the player with lightning.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Fixed the problems with enemies halting chasing and attacking, Gage helped me discover that the z axis was being modified so that they were traveling farther away from the player, it is now fixed. Started working on random enemy power up drops.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 3-27</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Jake - Made it so enemies now drop a random power up upon death. Probably will make it so it is a random chance if one gets dropped at all.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 3-28</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Boss can now create a lightning strike on top of the player but he doesn't move anymore for some reason. Lightning doesn't go away.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Made it random chance if a power up gets dropped upon killing an enemy.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 4-1</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Boss moves correctly and lighting strikes land directly on top of player, need to add delay before it drops.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Fixed a collision problem with the player where objects would collide with its sword and pulse. Now the player can only take damage and retrieve pickups with its central hitbox. Made it so enemies roam back and forth once the player gets out of range.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 4-2</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Organized tags of objects better.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Added a charge rate to pulse making it more balanced.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 4-4</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Mockup for title screen.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Added UI for pulse charge rate.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 4-9</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Finished mockup, creating art for buttons.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Made it so the fireball eventually dies if it misses an enemy and flies off screen. Worked on fixing some of the abilities for the boss.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 4-11</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Art for sword animation in game.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Coded the lightning attack for the boss.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 4-15</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Added art for main menu, adjusted camera clamping to accommodate for the new map layout.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Implemented a hammer swing for the Boss, a score counter, a countdown timer, temporary level background art, and the beginnings of a start screen.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 4-16</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Jake - Started working a civilian character that you can either kill or make your ally.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 4-18</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Made fireballs into a flamethrower that moves organically. Adjusted how much damage attacks do.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Finished implementing the civilian.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 4-23</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Jake - Tweaked the camera some more so it doesn't glitch when hitting the border and fixed some collision with the civilian. Probably gonna make it so the civilian fights with you.</p></li>
+                    <li><p class="BulletPointInList">• Ryan - Boss now spawns with a lighting strike at 60 seconds remaining.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 4-30</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Jake - Worked on making the Civilian fight with you.</p></li>
+                </ul>
+                <li><p class="BulletPointInList">• 5-6</p></li>
+                <ul>
+                    <li><p class="BulletPointInList">• Ryan - Added art for characters. New pulse animation. Title, credits, end game screens working. Added font.</p></li>
+                    <li><p class="BulletPointInList">• Jake - Implemented scene switching functionality, end game scene score displayed, sounds, tutorial scene, and fixed some bugs.</p></li>
+                </ul>
+            </ul>
             <iframe class="ProjectPageItchIOEmbed" src="https://itch.io/embed/259026?linkback=true&amp;link_color=6e00bf"><a href="https://veliproductions.itch.io/ragno">Ragnarok by VeliProductions</a></iframe>
         </div>
     </section>

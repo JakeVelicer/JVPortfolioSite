@@ -101,6 +101,7 @@
         height: 200vh;
         z-index: 900;
         background-color: var(--SiteColorTwo);
+        overflow: visible;
     }
 
     .MobileNav ul

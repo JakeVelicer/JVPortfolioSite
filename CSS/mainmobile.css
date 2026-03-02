@@ -98,7 +98,7 @@
         position: fixed;
         top: 74px;
         width: 100%;
-        height: 100vh;
+        height: calc(100vh + 100px);
         z-index: 900;
         background-color: var(--SiteColorTwo);
     }

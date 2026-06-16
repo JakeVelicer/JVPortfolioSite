@@ -145,6 +145,12 @@
         width: 202px;
     }
 
+    .ProjectPagePDFEmbed
+    {
+        width: 90%;
+        height: 500px;
+    }
+
     .ProjectGifImage
     {
         width: 100%;
@@ -246,6 +252,12 @@
     .ProjectPageItchIOEmbed
     {
         width: 202px;
+    }
+
+    .ProjectPagePDFEmbed
+    {
+        width: 100%;
+        height: 400px;
     }
 
     .ProjectGifImage

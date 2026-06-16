@@ -363,6 +363,15 @@ h3
     border: none;
 }
 
+.ProjectPagePDFEmbed
+{
+    margin: 30px auto 30px auto;
+    display: block;
+    width: 74%;
+    height: 700px;
+    border: none;
+}
+
 .ProjectStoreButtonsRow
 {
     margin: 16px auto 40px auto;

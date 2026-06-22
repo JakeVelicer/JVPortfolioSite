@@ -464,6 +464,7 @@ h3
 .ImageLightboxImage.Panning
 {
     cursor: grabbing;
+    transition: none;
 }
 
 .ImageLightboxButton

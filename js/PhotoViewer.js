@@ -111,7 +111,7 @@ function InitializeImageLightbox()
         }
 
         isPanning = true;
-        activePointerId = pointerId ?? null;
+        activePointerId = pointerId !== undefined && pointerId !== null ? pointerId : null;
         panStartX = clientX;
         panStartY = clientY;
         panStartOffsetX = panOffsetX;

@@ -176,18 +176,20 @@ h3
     text-align: left;
 }
 
-.ProjectGifImage
+.ProjectCenterImage
 {
     margin: 30px auto 30px auto;
     width: 56%;
     display: block;
+    cursor: zoom-in;
 }
 
-.ProjectGifImageWide
+.ProjectCenterImageWide
 {
     margin: 30px auto 24px auto;
-    width: 70%;
+    width: 80%;
     display: block;
+    cursor: zoom-in;
 }
 
 .ImageGridColumn
@@ -228,6 +230,11 @@ h3
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.ImageGridColumn img
+{
+    cursor: zoom-in;
 }
 
 .ImageGridRowThree
@@ -306,13 +313,22 @@ h3
     max-height: 100%;
     display: block;
     object-fit: cover;
+    cursor: zoom-in;
 }
 
-.ProjectPageSingleImage
+.ProjectPageNoZoomImageLarge
 {
     margin: 18px auto;
     display: block;
     width: 80%;
+    height: 100%;
+}
+
+.ProjectPageNoZoomImageSmall
+{
+    margin: 18px auto;
+    display: block;
+    width: 56%;
     height: 100%;
 }
 
@@ -402,4 +418,119 @@ h3
 {
     background-color: rgba(0, 0, 0, 0.132);
     box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.247);
+}
+
+.ImageLightbox
+{
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(12, 14, 18, 0.56);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    touch-action: none;
+    overscroll-behavior: contain;
+}
+
+.ImageLightbox.Open
+{
+    display: flex;
+}
+
+.ImageLightboxImage
+{
+    max-width: min(94vw, 1900px);
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.48);
+    transition: transform 0.18s ease;
+    transform-origin: center center;
+    touch-action: none;
+    cursor: zoom-in;
+    position: relative;
+    z-index: 1;
+}
+
+.ImageLightboxImage.Zoomed
+{
+    cursor: zoom-out;
+}
+
+.ImageLightboxImage.Panning
+{
+    cursor: grabbing;
+}
+
+.ImageLightboxButton
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: clamp(38px, 5vw, 56px);
+    height: clamp(38px, 5vw, 56px);
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    color: #ffffff;
+    font-size: clamp(2.1rem, 3.4vw, 3rem);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.ImageLightboxButton:hover
+{
+    background: rgba(0, 0, 0, 0.76);
+}
+
+.ImageLightboxPrev
+{
+    left: clamp(10px, 2vw, 28px);
+}
+
+.ImageLightboxNext
+{
+    right: clamp(10px, 2vw, 28px);
+}
+
+.ImageLightboxClose
+{
+    position: absolute;
+    top: clamp(10px, 2vw, 20px);
+    right: clamp(10px, 2vw, 20px);
+    width: clamp(34px, 4.6vw, 50px);
+    height: clamp(34px, 4.6vw, 50px);
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    color: #ffffff;
+    font-size: clamp(2.1rem, 3.2vw, 2.8rem);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.ImageLightboxClose:hover
+{
+    background: rgba(0, 0, 0, 0.76);
+}
+
+@media (max-width: 768px)
+{
+    .ImageLightboxImage
+    {
+        max-width: 96vw;
+        max-height: 86vh;
+    }
 }

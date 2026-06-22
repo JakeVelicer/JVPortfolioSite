@@ -38,14 +38,19 @@
         width: 86%;
     }
 
-    .ProjectGifImage
+    .ProjectCenterImage
     {
         width: 86%;
     }
 
-    .ProjectGifImageWide
+    .ProjectCenterImageWide
     {
         width: 100%;
+    }
+
+    .ProjectPageNoZoomImageSmall
+    {
+        width: 86%;
     }
 
     .ImageGridColumn
@@ -83,14 +88,19 @@
         width: 90%;
     }
 
-    .ProjectGifImage
+    .ProjectCenterImage
     {
         width: 90%;
     }
 
-    .ProjectGifImageWide
+    .ProjectCenterImageWide
     {
         width: 100%;
+    }
+
+    .ProjectPageNoZoomImageSmall
+    {
+        width: 90%;
     }
 
     .ImageGridColumn
@@ -151,12 +161,17 @@
         height: 500px;
     }
 
-    .ProjectGifImage
+    .ProjectCenterImage
     {
         width: 100%;
     }
 
-    .ProjectGifImageWide
+    .ProjectCenterImageWide
+    {
+        width: 100%;
+    }
+
+    .ProjectPageNoZoomImageSmall
     {
         width: 100%;
     }
@@ -195,7 +210,7 @@
         display: none;
     }
 
-    .ProjectPageSingleImage
+    .ProjectPageNoZoomImageLarge
     {
         width: 100%;
     }
@@ -260,12 +275,17 @@
         height: 400px;
     }
 
-    .ProjectGifImage
+    .ProjectCenterImage
     {
         width: 100%;
     }
 
-    .ProjectGifImageWide
+    .ProjectCenterImageWide
+    {
+        width: 100%;
+    }
+
+    .ProjectPageNoZoomImageSmall
     {
         width: 100%;
     }

@@ -14,19 +14,19 @@
         padding: 0px 60px 0px 60px;
     }
 
-    .ProjectGithubButton
+    .MultiUseButton
     {
         width: 26%;
         height: 56px;
         gap: 12px;
     }
 
-    .ProjectGithubButton p
+    .MultiUseButton p
     {
         font-size: 1.6rem;
     }
 
-    .ProjectGithubButton img
+    .MultiUseButton img
     {
         width: 30px;
         height: 30px;
@@ -253,19 +253,19 @@
         text-align: center;
     }
 
-    .ProjectGithubButton
+    .MultiUseButton
     {
         width: 36%;
         height: 56px;
         gap: 12px;
     }
 
-    .ProjectGithubButton p
+    .MultiUseButton p
     {
         font-size: 1.6rem;
     }
 
-    .ProjectGithubButton img
+    .MultiUseButton img
     {
         width: 30px;
         height: 30px;
@@ -307,19 +307,19 @@
         font-size: 4rem;
     }
 
-    .ProjectGithubButton
+    .MultiUseButton
     {
         width: 42%;
         height: 56px;
         gap: 12px;
     }
 
-    .ProjectGithubButton p
+    .MultiUseButton p
     {
         font-size: 1.6rem;
     }
 
-    .ProjectGithubButton img
+    .MultiUseButton img
     {
         width: 30px;
         height: 30px;
@@ -362,19 +362,19 @@
         font-size: 4rem;
     }
 
-    .ProjectGithubButton
+    .MultiUseButton
     {
         width: 66%;
         height: 50px;
         gap: 12px;
     }
 
-    .ProjectGithubButton p
+    .MultiUseButton p
     {
         font-size: 1.5rem;
     }
 
-    .ProjectGithubButton img
+    .MultiUseButton img
     {
         width: 30px;
         height: 30px;

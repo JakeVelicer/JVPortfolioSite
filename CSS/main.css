@@ -456,7 +456,7 @@ body:after
     letter-spacing: 0.38pt;
 }
 
-.ProjectGithubButton
+.MultiUseButton
 {
     margin: 24px auto;
     width: 14vw;
@@ -470,19 +470,19 @@ body:after
     gap: 14px;
 }
 
-.ProjectGithubButton p
+.MultiUseButton p
 {
     color: white;
     font-size: 1.8rem;
 }
 
-.ProjectGithubButton img
+.MultiUseButton img
 {
     width: 32px;
     height: 32px;
 }
 
-.ProjectGithubButton:hover
+.MultiUseButton:hover
 {
     background-color: black;
 }

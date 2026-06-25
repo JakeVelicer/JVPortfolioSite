@@ -290,6 +290,13 @@
         width: 100%;
     }
 
+    .BlogNavigationContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
     .ImageGridColumn
     {
         width: 100%;

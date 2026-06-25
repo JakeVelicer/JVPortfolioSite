@@ -113,7 +113,7 @@ async function jumpToNextBlogPage(currentBlog = window.location.pathname)
     const nextIndex = currentIndex - 1;
     if (nextIndex < 0)
     {
-        console.warn("Already on the first blog page.");
+        console.warn("Already on the newest blog page.");
         return;
     }
 
@@ -134,7 +134,7 @@ async function jumpToPreviousBlogPage(currentBlog = window.location.pathname)
     const previousIndex = currentIndex + 1;
     if (previousIndex >= blogPages.length)
     {
-        console.warn("Already on the last blog page.");
+        console.warn("Already on the oldest blog page.");
         return;
     }
 

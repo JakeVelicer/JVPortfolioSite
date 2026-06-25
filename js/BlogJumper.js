@@ -11,7 +11,9 @@ async function getBlogPagesFromIndex()
     const html = await response.text();
     const doc = new DOMParser().parseFromString(html, "text/html");
 
-    blogPages = Array.from(doc.querySelectorAll(".BlogsList > li > a.BlogElement"), (a) => a.getAttribute("href")).filter(Boolean);
+    blogPages = Array.from(doc.querySelectorAll(".BlogsList > li > a.BlogElement"), (a) => a.getAttribute("href"))
+        .filter(Boolean)
+        .map((href) => new URL(href, window.location.origin).pathname);
 
     return blogPages;
 }
@@ -50,11 +52,45 @@ async function ensureBlogPagesLoaded()
     }
 }
 
+function updateBlogNavigationButtonVisibility(currentBlog = window.location.pathname)
+{
+    const navigationContainer = document.querySelector(".BlogNavigationContainer");
+    if (!navigationContainer)
+    {
+        return;
+    }
+
+    const previousButton = navigationContainer.querySelector("a[onclick*='jumpToPreviousBlogPage']") || navigationContainer.querySelector("a:nth-of-type(1)");
+    const nextButton = navigationContainer.querySelector("a[onclick*='jumpToNextBlogPage']") || navigationContainer.querySelector("a:nth-of-type(2)");
+
+    const currentIndex = getCurrentBlogIndex(currentBlog);
+    if (currentIndex === -1)
+    {
+        return;
+    }
+
+    const hasPrevious = currentIndex > 0;
+    const hasNext = currentIndex < blogPages.length - 1;
+
+    if (previousButton)
+    {
+        previousButton.style.display = hasPrevious ? "" : "none";
+    }
+
+    if (nextButton)
+    {
+        nextButton.style.display = hasNext ? "" : "none";
+    }
+
+    navigationContainer.style.display = (hasPrevious || hasNext) ? "" : "none";
+}
+
 document.addEventListener("DOMContentLoaded", async () =>
 {
     try
     {
         await getBlogPagesFromIndex();
+        updateBlogNavigationButtonVisibility();
         console.log("Loaded blog pages:", blogPages);
     }
     catch (error)

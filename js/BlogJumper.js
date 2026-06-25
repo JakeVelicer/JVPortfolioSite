@@ -69,8 +69,8 @@ function updateBlogNavigationButtonVisibility(currentBlog = window.location.path
         return;
     }
 
-    const hasPrevious = currentIndex > 0;
-    const hasNext = currentIndex < blogPages.length - 1;
+    const hasPrevious = currentIndex < blogPages.length - 1;
+    const hasNext = currentIndex > 0;
 
     if (previousButton)
     {
@@ -110,10 +110,10 @@ async function jumpToNextBlogPage(currentBlog = window.location.pathname)
         return;
     }
 
-    const nextIndex = currentIndex + 1;
-    if (nextIndex >= blogPages.length)
+    const nextIndex = currentIndex - 1;
+    if (nextIndex < 0)
     {
-        console.warn("Already on the last blog page.");
+        console.warn("Already on the first blog page.");
         return;
     }
 
@@ -131,10 +131,10 @@ async function jumpToPreviousBlogPage(currentBlog = window.location.pathname)
         return;
     }
 
-    const previousIndex = currentIndex - 1;
-    if (previousIndex < 0)
+    const previousIndex = currentIndex + 1;
+    if (previousIndex >= blogPages.length)
     {
-        console.warn("Already on the first blog page.");
+        console.warn("Already on the last blog page.");
         return;
     }
 

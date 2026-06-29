@@ -20,16 +20,24 @@
     flex-direction: column;
 }
 
-.ProjectButton .ProjectButtonImage
+.ProjectButton .ProjectButtonImageHolder
 {
     width: 100%;
     height: 66%;
-    object-fit: cover;
-    transition: all 0.2s ease-in-out;
     overflow: hidden;
 }
 
-.ProjectButton:hover img
+.ProjectButtonImage
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+    will-change: transform;
+}
+
+.ProjectButton:hover .ProjectButtonImage
 {
     transform: scale(1.08);
 }
@@ -38,10 +46,7 @@
 .ProjectButton .ProjectTitlesHolder
 {
     padding-top: 16px;
-    height: 42%;
-    overflow: hidden;
-    z-index: 2;
-    background-color: white;
+    height: 43%;
 }
 
 .ProjectButtonTitlePrimary

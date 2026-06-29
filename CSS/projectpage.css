@@ -501,9 +501,6 @@ h3
     border: none;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.55);
-    color: #ffffff;
-    font-size: clamp(2.1rem, 3.4vw, 3rem);
-    line-height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -512,6 +509,15 @@ h3
     -webkit-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+}
+
+.ImageLightboxButtonIcon
+{
+    width: 62%;
+    height: 62%;
+    display: block;
+    object-fit: contain;
+    pointer-events: none;
 }
 
 .ImageLightboxButton:hover

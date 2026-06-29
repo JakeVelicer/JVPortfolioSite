@@ -28,13 +28,23 @@ function InitializeImageLightbox()
     previousButton.className = "ImageLightboxButton ImageLightboxPrev";
     previousButton.type = "button";
     previousButton.setAttribute("aria-label", "Previous image");
-    previousButton.innerHTML = "&#10094;";
+    const previousIcon = document.createElement("img");
+    previousIcon.className = "ImageLightboxButtonIcon";
+    previousIcon.src = "/Img/Navigation/arrow-left-circle-alt.svg";
+    previousIcon.alt = "";
+    previousIcon.draggable = false;
+    previousButton.appendChild(previousIcon);
 
     const nextButton = document.createElement("button");
     nextButton.className = "ImageLightboxButton ImageLightboxNext";
     nextButton.type = "button";
     nextButton.setAttribute("aria-label", "Next image");
-    nextButton.innerHTML = "&#10095;";
+    const nextIcon = document.createElement("img");
+    nextIcon.className = "ImageLightboxButtonIcon";
+    nextIcon.src = "/Img/Navigation/arrow-right-circle-alt.svg";
+    nextIcon.alt = "";
+    nextIcon.draggable = false;
+    nextButton.appendChild(nextIcon);
 
     const closeButton = document.createElement("button");
     closeButton.className = "ImageLightboxClose";

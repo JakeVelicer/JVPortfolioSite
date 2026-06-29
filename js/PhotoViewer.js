@@ -515,3 +515,42 @@ function InitializeImageLightbox()
         }
     });
 }
+
+function SizeGalleryToShortestImage(gallery)
+{
+    const items = Array.from(gallery.querySelectorAll(".ImageGalleryListItem"));
+    const heights = items
+        .map((item) =>
+        {
+            const image = item.querySelector("img");
+
+            if (!image || !image.naturalWidth || !image.naturalHeight)
+            {
+                return null;
+            }
+
+            const itemWidth = item.getBoundingClientRect().width;
+            return itemWidth * (image.naturalHeight / image.naturalWidth);
+        })
+        .filter((height) => height !== null);
+
+    if (heights.length === 0)
+    {
+        return;
+    }
+
+    const shortestHeight = Math.min(...heights);
+
+    items.forEach((item) =>
+    {
+        item.style.height = shortestHeight + "px";
+    });
+}
+
+function SizeAllGalleries()
+{
+    document.querySelectorAll(".ImageGalleryList").forEach(SizeGalleryToShortestImage);
+}
+
+window.addEventListener("load", SizeAllGalleries);
+window.addEventListener("resize", SizeAllGalleries);

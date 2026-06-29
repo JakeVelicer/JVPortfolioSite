@@ -63,6 +63,11 @@
         flex: 33.3%;
         max-width: 33.3%;
     }
+
+    .ImageGalleryList
+    {
+        --gallery-height-limit: 200px;
+    }
 }
 
 @media only screen and (max-width: 992px)
@@ -122,7 +127,8 @@
 
     .ImageGalleryList
     {
-        gap: 12px;
+        --gallery-height-limit: 170px;
+        gap: 10px;
         padding: 10px 20px;
     }
 }
@@ -201,6 +207,7 @@
 
     .ImageGalleryList
     {
+        --gallery-height-limit: 24vh;
         gap: 12px;
         padding: 10px 20px;
     }

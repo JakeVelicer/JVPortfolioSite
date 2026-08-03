@@ -1,6 +1,7 @@
 h1
 {
     padding: 26px 0px;
+    font-size: 6.5rem;
 }
 
 .FeaturedHolder
@@ -95,10 +96,9 @@ h1
 {
     aspect-ratio: var(--YTAspect);
     width:min(100%, min(840px, 90vh*(var(--YTAspect))));
-    margin: 40px auto;
+    margin: 44px auto;
     display: block;
-    border-style: none;
-    background-color: var(--SiteColorOne);
+    border: none;
 }
 
 .AboutMeSection

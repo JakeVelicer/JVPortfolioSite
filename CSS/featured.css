@@ -92,10 +92,19 @@ h1
     background-color: black;
 }
 
-.ReelYTEmbed
+.ReelYTEmbed16x9
 {
     aspect-ratio: var(--YTAspect);
     width:min(100%, min(840px, 90vh*(var(--YTAspect))));
+    margin: 44px auto;
+    display: block;
+    border: none;
+}
+
+.ReelYTEmbed8x5
+{
+    aspect-ratio: var(--YTAspectMediumTall);
+    width:min(100%, min(840px, 90vh*(var(--YTAspectMediumTall))));
     margin: 44px auto;
     display: block;
     border: none;

@@ -101,7 +101,7 @@ h1
     border: none;
 }
 
-.ReelYTEmbed8x5
+.ReelYTEmbed3x2
 {
     aspect-ratio: var(--YTAspectMediumTall);
     width:min(100%, min(840px, 90vh*(var(--YTAspectMediumTall))));

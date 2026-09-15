@@ -81,7 +81,7 @@ function InitializeImageLightbox()
     const SWIPE_MIN_DISTANCE = 50;
     const SWIPE_MAX_VERTICAL_DRIFT = 80;
     const MIN_ZOOM = 1;
-    const MAX_ZOOM = 3;
+    const MAX_ZOOM = 6;
     const ZOOM_STEP = 0.2;
 
     function GetTouchDistance(touchA, touchB)
